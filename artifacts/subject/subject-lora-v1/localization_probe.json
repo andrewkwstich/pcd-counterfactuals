@@ -1,0 +1,41 @@
+{
+  "read_layer": 15,
+  "hidden_state_convention": "hidden_states[k] = residual stream after block k",
+  "anchor_token_id": 400,
+  "n_examples": 4096,
+  "d_model": 4096,
+  "probes": {
+    "amount": {
+      "r2_train": 0.9728233057642195,
+      "r2_test": 0.9513627031914874,
+      "alpha": 100.0,
+      "n_train": 3276,
+      "n_test": 820
+    },
+    "log_amount": {
+      "r2_train": 0.9677191034930237,
+      "r2_test": 0.9544682074721729,
+      "alpha": 316.2277660168379,
+      "n_train": 3276,
+      "n_test": 820
+    },
+    "approval_fraction": {
+      "r2_train": 0.8166983497489275,
+      "r2_test": 0.8228741052094333,
+      "alpha": 31622.776601683792,
+      "n_train": 3276,
+      "n_test": 820
+    }
+  },
+  "baseline_requested_only": {
+    "r2_train": 0.8335725090543625,
+    "r2_test": 0.8469990176030824,
+    "alpha": 0.1,
+    "n_train": 3276,
+    "n_test": 820
+  },
+  "threshold_r2": 0.8,
+  "gate_pass": true,
+  "adapter": "artifacts/subject/subject-lora-v1/adapter",
+  "minimal_run": false
+}

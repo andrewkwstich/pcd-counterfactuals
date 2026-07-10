@@ -1,0 +1,16 @@
+{
+  "state": "completed",
+  "global_step": 6250,
+  "max_steps": 6250,
+  "pct_complete": 100.0,
+  "epoch": 2.0,
+  "eta_seconds": null,
+  "elapsed_seconds": 5013,
+  "pid": 20465,
+  "updated_at": "2026-07-07T01:08:46+0000",
+  "last_train_loss": 2.2478450775146483,
+  "last_eval_loss": 2.2240569591522217,
+  "last_decode_mae": 44740.890625,
+  "last_decode_parse_rate": 1.0,
+  "final_eval_loss": 2.2240569591522217
+}

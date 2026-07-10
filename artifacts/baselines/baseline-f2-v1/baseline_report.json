@@ -1,0 +1,17 @@
+{
+  "run_name": "baseline-f2-v1",
+  "steps": 4000,
+  "mode": "full-application",
+  "include_application": true,
+  "elapsed_seconds": 12656.3,
+  "final_qa_loss_ema": 0.5286853809199312,
+  "val_qa_loss": 0.767,
+  "val_answer_tok_acc": 0.8174,
+  "val_exact_match": 0.4326,
+  "val_n": 2048,
+  "epochs": 7,
+  "num_processes": 4,
+  "effective_batch": 128,
+  "peak_gpu_gib": 52.05,
+  "minimal_run": false
+}

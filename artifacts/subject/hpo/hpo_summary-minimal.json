@@ -1,0 +1,36 @@
+{
+  "proposal": "H1 short-budget LR ladder",
+  "pilot_steps": 500,
+  "tie_tol": 0.02,
+  "results": [
+    {
+      "lr": 5e-05,
+      "run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr5e-05-minimal",
+      "returncode": 0,
+      "eval_loss": 2.766119956970215,
+      "decode_n": 16,
+      "decode_parse_rate": 1.0,
+      "decode_trailing_junk_rate": 0.0,
+      "decode_mae": 57041.3125,
+      "decode_medae": 39300.0,
+      "decode_r2": 0.9434406192075635,
+      "decode_seconds": 0.4
+    },
+    {
+      "lr": 0.0001,
+      "run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr0.0001-minimal",
+      "returncode": 0,
+      "eval_loss": 2.700554847717285,
+      "decode_n": 16,
+      "decode_parse_rate": 1.0,
+      "decode_trailing_junk_rate": 0.0,
+      "decode_mae": 79167.9375,
+      "decode_medae": 36800.0,
+      "decode_r2": 0.8062478020608126,
+      "decode_seconds": 0.3
+    }
+  ],
+  "winner_lr": 5e-05,
+  "winner_run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr5e-05-minimal",
+  "note": "run full training with train.learning_rate = winner_lr"
+}

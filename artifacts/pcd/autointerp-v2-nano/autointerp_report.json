@@ -1,0 +1,13 @@
+{
+  "run_name": "autointerp-v2",
+  "model_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "encoder_ckpt": "artifacts/pcd/pcd-pretrain-v2/final/encoder.pt",
+  "n_passages": 4000,
+  "n_live_concepts": 3044,
+  "n_concepts_labeled": 400,
+  "mean_auto_interp_score": 0.1355,
+  "backend": "openai",
+  "seconds": 647.8,
+  "labels_path": "artifacts/pcd/autointerp-v2/concept_labels.json",
+  "minimal_run": false
+}

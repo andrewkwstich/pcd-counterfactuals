@@ -1,0 +1,14 @@
+{
+  "cell": "sense2_race x name_categorical",
+  "N": 9311,
+  "pcd_fc_sign_acc": 0.7123,
+  "f1prime_fc_sign_acc": 0.7901,
+  "diff_pcd_minus_f1prime": -0.0779,
+  "ci95_diff": [
+    -0.0876,
+    -0.0676
+  ],
+  "p_two_sided": 0.0,
+  "label_sign_ceiling": 0.919,
+  "verdict": "' > PCD (sig)"
+}

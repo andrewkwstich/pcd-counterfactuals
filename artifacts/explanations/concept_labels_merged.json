@@ -1,0 +1,1301 @@
+{
+ "45": {
+ "description": "the digit 1 / singleton count"
+ },
+ "71": {
+ "description": "name substrings containing \u201ck\u201d or \u201csh\u201d"
+ },
+ "97": {
+ "description": "the word \u201cWorking\u201d in an employment-type field"
+ },
+ "259": {
+ "description": "applicant first names, especially common given names"
+ },
+ "407": {
+ "description": "first names with uncommon feminine/Black-American name endings"
+ },
+ "421": {
+ "description": "the word \u201cHouse\u201d in \u201cHousehold size\u201d"
+ },
+ "603": {
+ "description": "the phrase \u201cHousehold size\u201d"
+ },
+ "713": {
+ "description": "the phrase \u201cSecondary / secondary special\u201d"
+ },
+ "833": {
+ "description": "the word \u201cPensioner\u201d"
+ },
+ "875": {
+ "description": "the month abbreviation \u201cJul\u201d"
+ },
+ "926": {
+ "description": "first names beginning with \u201cIsh\u201d"
+ },
+ "1048": {
+ "description": "first names starting with \u201cJa\u201d or \u201cYa\u201d"
+ },
+ "1163": {
+ "description": "ages in the mid-60s"
+ },
+ "1262": {
+ "description": "Indian given names ending in \u201c-na/-sh/-an/-etha\u201d"
+ },
+ "1297": {
+ "description": "South/Southeast Asian applicant names or adjacent age-field spacing"
+ },
+ "1328": {
+ "description": "first names ending at the name/age boundary"
+ },
+ "1331": {
+ "description": "first names starting with \u201cMe\u201d"
+ },
+ "1370": {
+ "description": "tokens ending in \u201cm\u201d or \u201cfe\u201d"
+ },
+ "1378": {
+ "description": "blank/whitespace after \u201csystem\u201d"
+ },
+ "1475": {
+ "description": "the phrase \u201cHigher education\u201d"
+ },
+ "1552": {
+ "description": "female first names ending in \u201ca\u201d"
+ },
+ "1581": {
+ "description": "Names containing \u201cow\u201d or similar vowel+\u201cw\u201d/\u201cour\u201d sequences"
+ },
+ "1738": {
+ "description": "first names beginning with \u201cNe\u201d"
+ },
+ "1991": {
+ "description": "employment type label \u201cState\u201d"
+ },
+ "2000": {
+ "description": "employment type field/value labels"
+ },
+ "2025": {
+ "description": "the \u201cEmployment\u201d field label in a form/profile"
+ },
+ "2037": {
+ "description": "first names with stereotypically Black/African-American morphology"
+ },
+ "2211": {
+ "description": "the letter \u201co\u201d / \u201cO\u201d within a word"
+ },
+ "2282": {
+ "description": "uncommon given names without spaces"
+ },
+ "2388": {
+ "description": "Names starting with \u201cShar\u201d / \u201cShare\u201d"
+ },
+ "2430": {
+ "description": "education field label"
+ },
+ "2470": {
+ "description": "employment status labels"
+ },
+ "2507": {
+ "description": "the word \u201csystem\u201d at the start of a header line"
+ },
+ "2578": {
+ "description": "the month name \u201cDecember\u201d"
+ },
+ "2593": {
+ "description": "first names beginning with \u201cDe\u201d"
+ },
+ "2689": {
+ "description": "the word \u201cWorking\u201d in an employment-type field"
+ },
+ "2738": {
+ "description": "the word \u201cHouse\u201d in \u201cHousehold size\u201d"
+ },
+ "2744": {
+ "description": "single-word applicant names / place names"
+ },
+ "2811": {
+ "description": "male first names"
+ },
+ "2943": {
+ "description": "household size of 4"
+ },
+ "2962": {
+ "description": "the word \u201cKnowledge\u201d in \u201cCutting Knowledge Date\u201d"
+ },
+ "2989": {
+ "description": "ages followed by \u201cHousehold size\u201d"
+ },
+ "3242": {
+ "description": "first names starting with Br\u0561"
+ },
+ "3409": {
+ "description": "female first names"
+ },
+ "3415": {
+ "description": "the year number following \u201cDecember\u201d in a date header"
+ },
+ "3459": {
+ "description": "employment status field values"
+ },
+ "3576": {
+ "description": "ages in the 40s"
+ },
+ "3611": {
+ "description": "a space before a field label or value"
+ },
+ "3618": {
+ "description": "royal or honorific name titles"
+ },
+ "3663": {
+ "description": "name-internal consonant clusters"
+ },
+ "3716": {
+ "description": "the word \u201cpension\u201d / \u201cpensioner\u201d in employment type fields"
+ },
+ "3791": {
+ "description": "the word \u201csystem\u201d at the start of a header line"
+ },
+ "3916": {
+ "description": "two-digit demographic numbers"
+ },
+ "4057": {
+ "description": "empty token after \u201csystem\u201d"
+ },
+ "4058": {
+ "description": "female first names ending in \u201ca\u201d"
+ },
+ "4082": {
+ "description": "ages in the mid\u201150s to mid\u201160s"
+ },
+ "4193": {
+ "description": "first names containing \u201cah\u201d/\u201cia\u201d-type vowel endings"
+ },
+ "4342": {
+ "description": "Applicant field separator / blank after a name"
+ },
+ "4354": {
+ "description": "female first names ending in \u201c-y/-kia/-ka\u201d"
+ },
+ "4393": {
+ "description": "ages in the mid-to-late 60s"
+ },
+ "4422": {
+ "description": "the word \u201cKnowledge\u201d in \u201cCutting Knowledge Date\u201d"
+ },
+ "4537": {
+ "description": "the word \u201cStudent\u201d and similar title-cased form-field values"
+ },
+ "4560": {
+ "description": "name fragments containing \u201cre\u201d"
+ },
+ "4598": {
+ "description": "the word \u201csecondary\u201d in education level labels"
+ },
+ "4602": {
+ "description": "age 54"
+ },
+ "4669": {
+ "description": "first names containing \u201cvi\u201d, \u201casm\u201d, or \u201csri\u201d"
+ },
+ "4670": {
+ "description": "Names containing \u201cake\u201d/\u201cshak\u201d letter sequences"
+ },
+ "4671": {
+ "description": "single letters/digits inside applicant names or dates"
+ },
+ "4757": {
+ "description": "the word \u201cPensioner\u201d / retired employment status"
+ },
+ "4769": {
+ "description": "Household size of 2"
+ },
+ "4802": {
+ "description": "the word \u201cWorking\u201d in an employment-type field"
+ },
+ "5104": {
+ "description": "male-associated name parts or words ending in \u201cman\u201d"
+ },
+ "5116": {
+ "description": "the field label \u201cOccupation\u201d / \u201cOccup\u201d"
+ },
+ "5191": {
+ "description": "the word \u201cassociate\u201d in \u201cCommercial associate\u201d"
+ },
+ "5209": {
+ "description": "first names containing \u201cr\u201d followed soon after by another consonant"
+ },
+ "5237": {
+ "description": "Names containing \u201cqu\u201d"
+ },
+ "5394": {
+ "description": "the age value 45"
+ },
+ "5468": {
+ "description": "the word \u201cloan\u201d in a loan application header"
+ },
+ "5500": {
+ "description": "the word \u201cloan\u201d in a loan application header"
+ },
+ "5521": {
+ "description": "single-person household field separator"
+ },
+ "5674": {
+ "description": "the word \u201cspecial\u201d in \u201csecondary special\u201d education"
+ },
+ "5734": {
+ "description": "first names ending in \u201ca\u201d or \u201cn\u201d"
+ },
+ "5800": {
+ "description": "ages in the late 20s to early 50s"
+ },
+ "5806": {
+ "description": "the word fragment \u201cOccup\u201d / occupation-related text"
+ },
+ "5835": {
+ "description": "household size value separator / spacing after the number"
+ },
+ "5903": {
+ "description": "loan application demographic fields"
+ },
+ "5957": {
+ "description": "first names containing \u201cie\u201d or \u201cish\u201d sound patterns"
+ },
+ "6158": {
+ "description": "female first names"
+ },
+ "6294": {
+ "description": "the word \u201csystem\u201d at the start of a header line"
+ },
+ "6719": {
+ "description": "first names beginning with \u201cEs\u201d"
+ },
+ "6813": {
+ "description": "the numeral \u201c1\u201d / \u201cone\u201d indicating a count of one"
+ },
+ "6861": {
+ "description": "the space immediately after \u201cDecember\u201d before a year/date"
+ },
+ "6875": {
+ "description": "age 29"
+ },
+ "7029": {
+ "description": "the age value 25"
+ },
+ "7330": {
+ "description": "blank space after a date label"
+ },
+ "7339": {
+ "description": "male given names"
+ },
+ "7387": {
+ "description": "short applicant first names"
+ },
+ "7562": {
+ "description": "the separator after \u201cHousehold size: 1\u201d"
+ },
+ "7683": {
+ "description": "the age value 26"
+ },
+ "7688": {
+ "description": "Names containing \u201cyes\u201d/\u201cess\u201d or similar letter sequences"
+ },
+ "7704": {
+ "description": "the phrase \u201cAcademic degree\u201d"
+ },
+ "7830": {
+ "description": "first names containing \u201can\u201d/\u201cman\u201d letter sequences"
+ },
+ "7967": {
+ "description": "employment type field label"
+ },
+ "8010": {
+ "description": "place names used as applicant names"
+ },
+ "8115": {
+ "description": "the word \u201chigher\u201d in \u201cIncomplete higher\u201d"
+ },
+ "8243": {
+ "description": "Lower secondary education field/value"
+ },
+ "8257": {
+ "description": "the word \u201cBusiness\u201d in \u201cBusinessman\u201d"
+ },
+ "8261": {
+ "description": "blank space after a date label"
+ },
+ "8396": {
+ "description": "the phrase \u201cCommercial associate\u201d"
+ },
+ "8573": {
+ "description": "Names/words containing \u201coy\u201d or \u201cail\u201d, especially in loan-application fields"
+ },
+ "8677": {
+ "description": "first names starting with \u201cTe\u201d or \u201cTh\u201d"
+ },
+ "8716": {
+ "description": "tokens starting with \u201cPe\u201d"
+ },
+ "8734": {
+ "description": "Names containing \u201chern\u201d/\u201cbern\u201d/\u201cshen\u201d/\u201ccheng\u201d-like letter sequences"
+ },
+ "8737": {
+ "description": "first names containing uncommon consonant letters like m, ph, d, or re"
+ },
+ "8905": {
+ "description": "first names containing \u201cef\u201d/\u201celf\u201d/\u201cuf\u201d/\u201cft\u201d letter sequences"
+ },
+ "9039": {
+ "description": "the number 3 / names starting with \u201cA\u201d"
+ },
+ "9061": {
+ "description": "male-associated applicant names/gender marker"
+ },
+ "9200": {
+ "description": "given names ending in \u201cng\u201d or \u201cstance\u201d/\u201clossie\u201d sounds"
+ },
+ "9234": {
+ "description": "secondary special education / age 39"
+ },
+ "9343": {
+ "description": "first names beginning with \u201cAri/Are\u201d"
+ },
+ "9383": {
+ "description": "education level: secondary schooling"
+ },
+ "9467": {
+ "description": "letters in applicant names followed by \u201cAge\u201d/\u201cHousehold\u201d form text"
+ },
+ "9479": {
+ "description": "first names ending in \u201cja\u201d or similar \u201cj/ch\u201d-final sounds"
+ },
+ "9525": {
+ "description": "the field label \u201cAge\u201d in application forms"
+ },
+ "9618": {
+ "description": "female first names / empty token at line start"
+ },
+ "9646": {
+ "description": "uncommon given names, especially feminine ones"
+ },
+ "9704": {
+ "description": "first names containing \u201cr\u201d followed by a front vowel"
+ },
+ "9805": {
+ "description": "the word \u201cHouse\u201d at the start of \u201cHousehold size\u201d"
+ },
+ "9885": {
+ "description": "age 24 entries"
+ },
+ "9919": {
+ "description": "ages 31\u201332"
+ },
+ "9997": {
+ "description": "lower-status socioeconomic indicators"
+ },
+ "10056": {
+ "description": "first names containing \u201cc\u201d"
+ },
+ "10059": {
+ "description": "blank/whitespace after \u201csystem\u201d"
+ },
+ "10065": {
+ "description": "the employment-status term \u201cpensioner\u201d / \u201cpension\u201d"
+ },
+ "10137": {
+ "description": "loan application form header"
+ },
+ "10190": {
+ "description": "the word \u201cassociate\u201d (and similar occupation/nationality field values)"
+ },
+ "10291": {
+ "description": "applicant first names containing animal-related names or fragments"
+ },
+ "10406": {
+ "description": "letters in applicant first names"
+ },
+ "10692": {
+ "description": "female first names starting with \u201cO\u201d"
+ },
+ "10696": {
+ "description": "first names beginning with \u201cHers\u201d or \u201cEst\u201d"
+ },
+ "10810": {
+ "description": "female first names ending in \u201ca\u201d"
+ },
+ "10811": {
+ "description": "day-of-month number in a date"
+ },
+ "10814": {
+ "description": "the word \u201cservant\u201d in \u201cState servant\u201d"
+ },
+ "10871": {
+ "description": "male given names"
+ },
+ "10939": {
+ "description": "blank separator after \u201cSecondary / secondary special\u201d"
+ },
+ "10986": {
+ "description": "first names ending in \u201c-on/-en/-an\u201d"
+ },
+ "11034": {
+ "description": "the word \u201cHouse\u201d in \u201cHousehold size\u201d"
+ },
+ "11059": {
+ "description": "male first names ending in \u201css\u201d or \u201cn\u201d"
+ },
+ "11117": {
+ "description": "age 29"
+ },
+ "11198": {
+ "description": "the \u201c202\u201d prefix in the year 2024"
+ },
+ "11251": {
+ "description": "the suffix \u201c-ation\u201d in \u201coccupation\u201d"
+ },
+ "11301": {
+ "description": "employment type field label"
+ },
+ "11451": {
+ "description": "given names ending in \u201ca\u201d or similar vowel sounds"
+ },
+ "11588": {
+ "description": "female first names / \u201cSecondary\u201d education field"
+ },
+ "11641": {
+ "description": "the phrase \u201cHousehold size\u201d"
+ },
+ "11673": {
+ "description": "the employment-type label \u201cCommercial\u201d"
+ },
+ "11773": {
+ "description": "the \u201cEducation\u201d field label in demographic records"
+ },
+ "11829": {
+ "description": "first names beginning with \u201cS\u201d"
+ },
+ "11925": {
+ "description": "Household size of 1"
+ },
+ "11936": {
+ "description": "applicant first names starting with \u201cL\u201d"
+ },
+ "12009": {
+ "description": "first names containing \u201cill\u201d or a similar \u201ci/l\u201d sequence"
+ },
+ "12266": {
+ "description": "the trigram \u201cor\u201d within a word"
+ },
+ "12277": {
+ "description": "the slash in \u201cSecondary / secondary special\u201d"
+ },
+ "12388": {
+ "description": "Spanish given names containing \u201co\u201d followed by another consonant"
+ },
+ "12502": {
+ "description": "first names containing \u201ce\u201d followed by another vowel"
+ },
+ "12647": {
+ "description": "letter bigrams ending in \u201cu/l/o\u201d"
+ },
+ "12771": {
+ "description": "first names beginning with D\u0565"
+ },
+ "13011": {
+ "description": "female first names"
+ },
+ "13055": {
+ "description": "female given names"
+ },
+ "13069": {
+ "description": "given names ending in \u201conna\u201d or \u201cvon/us\u201d"
+ },
+ "13104": {
+ "description": "loan application form header"
+ },
+ "13125": {
+ "description": "the word \u201cDate\u201d in a date label/header"
+ },
+ "13220": {
+ "description": "first names containing \u201cari\u201d or similar letter sequences"
+ },
+ "13318": {
+ "description": "blank space after \u201cAge:\u201d"
+ },
+ "13321": {
+ "description": "male given names / masculine name parts"
+ },
+ "13328": {
+ "description": "South Indian surname endings in names"
+ },
+ "13530": {
+ "description": "the word \u201cHouse\u201d at the start of \u201cHousehold size\u201d"
+ },
+ "13683": {
+ "description": "the word \u201cHouse\u201d in \u201cHousehold size\u201d"
+ },
+ "14005": {
+ "description": "the word \u201cCommercial\u201d in an employment-type field"
+ },
+ "14081": {
+ "description": "the phrase \u201cloan application\u201d"
+ },
+ "14154": {
+ "description": "female first names ending in \u201c-onna\u201d or similar sounds"
+ },
+ "14194": {
+ "description": "the word \u201cEmployment\u201d in a demographic/profile field"
+ },
+ "14230": {
+ "description": "the word \u201cLOAN\u201d in \u201cLOAN APPLICATION\u201d"
+ },
+ "14233": {
+ "description": "given names ending in \u201c-un/-ut/-our/-won\u201d"
+ },
+ "14234": {
+ "description": "the slash in \u201cSecondary / secondary special\u201d"
+ },
+ "14243": {
+ "description": "the phrase \u201cEmployment type\u201d"
+ },
+ "14269": {
+ "description": "female-gendered given-name substrings in applicant names"
+ },
+ "14343": {
+ "description": "the word \u201cservant\u201d in \u201cState servant\u201d"
+ },
+ "14396": {
+ "description": "first names containing \u201cgen\u201d / \u201cenc\u201d letter sequences"
+ },
+ "14471": {
+ "description": "first names starting with \u201cMe\u201d"
+ },
+ "14490": {
+ "description": "empty token after \u201csystem\u201d"
+ },
+ "14508": {
+ "description": "large household size or age 27"
+ },
+ "14784": {
+ "description": "household-related demographic fields"
+ },
+ "14898": {
+ "description": "ages following \u201cAge:\u201d"
+ },
+ "14986": {
+ "description": "first names starting with \u201cF\u201d"
+ },
+ "14987": {
+ "description": "first names starting with \u201cA\u201d"
+ },
+ "15485": {
+ "description": "\u201cHousehold\u201d in demographic survey records"
+ },
+ "15528": {
+ "description": "male first names"
+ },
+ "15549": {
+ "description": "demographic field labels like \u201chousehold size\u201d or \u201cemployment type\u201d"
+ },
+ "15557": {
+ "description": "the phrase \u201cEmployment type\u201d"
+ },
+ "15620": {
+ "description": "the phrase \u201cloan application\u201d"
+ },
+ "15849": {
+ "description": "colon after field labels"
+ },
+ "15858": {
+ "description": "the number \u201c202\u201d in \u201c2023\u201d"
+ },
+ "16099": {
+ "description": "the prefix \u201cIn\u201d in \u201cIncomplete higher\u201d"
+ },
+ "16392": {
+ "description": "given names that are also place or famous-name words"
+ },
+ "16551": {
+ "description": "middle-aged ages and single-person household size"
+ },
+ "16600": {
+ "description": "field values after labels"
+ },
+ "16612": {
+ "description": "given names ending in \u201cu\u201d or \u201cv\u201d"
+ },
+ "16926": {
+ "description": "blank separator after \u201cIncomplete higher\u201d"
+ },
+ "16989": {
+ "description": "proper nouns used as applicant names"
+ },
+ "17023": {
+ "description": "the word \u201cpension\u201d / \u201cpensioner\u201d in employment type fields"
+ },
+ "17032": {
+ "description": "the word \u201cPensioner\u201d after \u201cEmployment type:\u201d"
+ },
+ "17051": {
+ "description": "female given names containing \u201cmar\u201d/similar letter sequences"
+ },
+ "17078": {
+ "description": "uncommon given names with unusual internal letter sequences"
+ },
+ "17141": {
+ "description": "first names ending in \u201cy\u201d or \u201cn\u201d"
+ },
+ "17457": {
+ "description": "first names beginning with \u201cMat\u201d"
+ },
+ "17462": {
+ "description": "token sequence \u201cidd\u201d / \u201c202\u201d ending in 2-digits"
+ },
+ "17576": {
+ "description": "colon after \u201cEmployment type\u201d"
+ },
+ "17614": {
+ "description": "the word \u201csystem\u201d at the start of a header line"
+ },
+ "17626": {
+ "description": "name-internal letter trigrams ending in a consonant"
+ },
+ "17767": {
+ "description": "the word \u201cHousehold\u201d in demographic survey entries"
+ },
+ "18140": {
+ "description": "Indian-style given names"
+ },
+ "18161": {
+ "description": "first names containing \u201ca/i\u201d sound clusters like \u201cadi/aji/ali/ani/ishi\u201d"
+ },
+ "18177": {
+ "description": "name substrings containing \u201creen\u201d/\u201crein\u201d or similar vowel+n endings"
+ },
+ "18260": {
+ "description": "first names starting with \u201cV\u201d"
+ },
+ "18275": {
+ "description": "education level field ending before employment type"
+ },
+ "18297": {
+ "description": "uncommon male first names"
+ },
+ "18485": {
+ "description": "the phrase \u201cHigher education\u201d"
+ },
+ "18740": {
+ "description": "names containing \u201cje\u201d or \u201cli\u201d vowel sequences"
+ },
+ "18779": {
+ "description": "Words ending in \u201c-ates/-er\u201d"
+ },
+ "18910": {
+ "description": "female first names"
+ },
+ "18971": {
+ "description": "the prefix \u201cIn\u201d in \u201cIncomplete higher\u201d"
+ },
+ "19053": {
+ "description": "blank space after a date or field label"
+ },
+ "19055": {
+ "description": "Names starting with \u201cLib\u201d"
+ },
+ "19067": {
+ "description": "blank space between metadata fields"
+ },
+ "19170": {
+ "description": "household size of 1"
+ },
+ "19175": {
+ "description": "male first names"
+ },
+ "19184": {
+ "description": "Names beginning with \u201cMy\u201d"
+ },
+ "19352": {
+ "description": "first names starting with \u201cLe\u201d"
+ },
+ "19378": {
+ "description": "colon after \u201cEmployment type\u201d"
+ },
+ "19512": {
+ "description": "first names beginning with \u201cNo\u201d or \u201cNa\u201d"
+ },
+ "19514": {
+ "description": "the word fragment \u201cOccup\u201d in \u201cOccupation\u201d"
+ },
+ "19555": {
+ "description": "given names / first names"
+ },
+ "19652": {
+ "description": "the age value 54"
+ },
+ "19689": {
+ "description": "first names beginning with \u201cRob\u201d or \u201cBob\u201d"
+ },
+ "19935": {
+ "description": "blank space between metadata fields"
+ },
+ "20063": {
+ "description": "male given names ending in \u201cbhai\u201d or similar Indian names"
+ },
+ "20093": {
+ "description": "the word \u201cHouse\u201d in \u201cHousehold size\u201d"
+ },
+ "20158": {
+ "description": "male first names starting with \u201cGr\u201d"
+ },
+ "20220": {
+ "description": "first names containing \u201cell\u201d or starting with \u201cShen\u201d"
+ },
+ "20254": {
+ "description": "the word \u201cCut\u201d at the start of \u201cCutting\u201d"
+ },
+ "20373": {
+ "description": "first names containing uncommon letter sequences like \u201cel/al/on/io\u201d"
+ },
+ "20443": {
+ "description": "male given names ending in \u201c-os/-es/-ore\u201d"
+ },
+ "20511": {
+ "description": "the phrase \u201cState servant\u201d"
+ },
+ "20641": {
+ "description": "first names beginning with \u201cMar\u201d"
+ },
+ "20743": {
+ "description": "chat header before \u201cLOAN APPLICATION\u201d"
+ },
+ "20776": {
+ "description": "tokens beginning with \u201cIn\u201d"
+ },
+ "21170": {
+ "description": "first names beginning with \u201cSh\u201d"
+ },
+ "21271": {
+ "description": "the phrase \u201cEmployment type\u201d"
+ },
+ "21288": {
+ "description": "Indian given names"
+ },
+ "21375": {
+ "description": "blank space before \u201cLOAN APPLICATION\u201d"
+ },
+ "21464": {
+ "description": "first names, especially male given names"
+ },
+ "21516": {
+ "description": "names containing \u201cr\u201d or \u201cd\u201d near the start"
+ },
+ "21568": {
+ "description": "the field label \u201cAge\u201d and age values in applicant records"
+ },
+ "21572": {
+ "description": "the word \u201cservant\u201d in \u201cstate servant\u201d"
+ },
+ "21634": {
+ "description": "the year number following \u201cDecember\u201d"
+ },
+ "21719": {
+ "description": "Household size values (especially 1\u20132)"
+ },
+ "21723": {
+ "description": "ages in the 20s to early 30s"
+ },
+ "21756": {
+ "description": "female given names in applicant records"
+ },
+ "21948": {
+ "description": "African-American given names"
+ },
+ "22034": {
+ "description": "the separator after \u201cHigher education\u201d before employment type"
+ },
+ "22169": {
+ "description": "South Asian given names starting with \u201cDeep\u201d or \u201cDip\u201d"
+ },
+ "22237": {
+ "description": "the word \u201chousehold\u201d / \u201chousehold size\u201d"
+ },
+ "22413": {
+ "description": "colon after \u201cHousehold size\u201d"
+ },
+ "22455": {
+ "description": "slash separating education levels"
+ },
+ "22531": {
+ "description": "colon after \u201cAge\u201d in an application form"
+ },
+ "22674": {
+ "description": "the word \u201cApplicant\u201d in a loan application form"
+ },
+ "22698": {
+ "description": "female given names"
+ },
+ "22745": {
+ "description": "first names starting with K"
+ },
+ "23036": {
+ "description": "female first names containing \u201cess/aja/iera/etta\u201d"
+ },
+ "23049": {
+ "description": "the \u201cEducation:\u201d field label / colon separator"
+ },
+ "23258": {
+ "description": "loan-application applicant names or ages"
+ },
+ "23294": {
+ "description": "blank or missing field after a label"
+ },
+ "23358": {
+ "description": "first names ending with \u201ca\u201d or \u201cs\u201d"
+ },
+ "23452": {
+ "description": "male/female given names containing uncommon letter sequences"
+ },
+ "23647": {
+ "description": "the phrase \u201cincomplete higher\u201d in education level"
+ },
+ "23727": {
+ "description": "the phrase \u201cAcademic degree\u201d"
+ },
+ "23868": {
+ "description": "first names beginning with \u201cVi\u201d"
+ },
+ "23873": {
+ "description": "the phrase \u201cEmployment type\u201d"
+ },
+ "23954": {
+ "description": "Household-size field separator after age in demographic records"
+ },
+ "24123": {
+ "description": "South Indian male given names"
+ },
+ "24164": {
+ "description": "given names containing \u201cuy\u201d"
+ },
+ "24243": {
+ "description": "the word \u201chold\u201d and adjacent standalone spaces"
+ },
+ "24267": {
+ "description": "first names beginning with \u201cRub\u201d"
+ },
+ "24294": {
+ "description": "the field label \u201cAge\u201d in application forms"
+ },
+ "24332": {
+ "description": "two-digit ages, especially ending in 7"
+ },
+ "24496": {
+ "description": "male first names"
+ },
+ "24626": {
+ "description": "Spanish-like words beginning with \u201cBien\u201d or \u201cspecial\u201d"
+ },
+ "24707": {
+ "description": "male given names"
+ },
+ "24891": {
+ "description": "the digit 3 in the year 2023"
+ },
+ "25070": {
+ "description": "blank/missing age value"
+ },
+ "25086": {
+ "description": "field labels like \u201cdegree\u201d or \u201cAge\u201d"
+ },
+ "25130": {
+ "description": "first names containing \u201cash\u201d or \u201crious/avar\u201d letter patterns"
+ },
+ "25141": {
+ "description": "male first names"
+ },
+ "25176": {
+ "description": "first names containing \u201cri\u201d/\u201crig\u201d-like letter sequences"
+ },
+ "25307": {
+ "description": "household sizes of 4 or 5"
+ },
+ "25414": {
+ "description": "tokens ending in \u201c-ion/-em\u201d name-like strings"
+ },
+ "25511": {
+ "description": "first names containing \u201cam\u201d or \u201came\u201d"
+ },
+ "25543": {
+ "description": "female first names or the following space"
+ },
+ "25584": {
+ "description": "name-internal lowercase trigrams ending in \u201cl/d/k/b\u201d"
+ },
+ "25667": {
+ "description": "blank space between metadata fields"
+ },
+ "25801": {
+ "description": "blank/whitespace after \u201csystem\u201d"
+ },
+ "26054": {
+ "description": "the word fragment \u201cOccup\u201d in employment-type labels"
+ },
+ "26146": {
+ "description": "colon after \u201cEmployment type\u201d"
+ },
+ "26147": {
+ "description": "the word \u201cState\u201d in \u201cEmployment type: State servant\u201d"
+ },
+ "26177": {
+ "description": "blank space after \u201cAge:\u201d"
+ },
+ "26214": {
+ "description": "ages 28\u201329"
+ },
+ "26246": {
+ "description": "the age value 41"
+ },
+ "26484": {
+ "description": "first names containing \u201cen\u201d"
+ },
+ "26492": {
+ "description": "household sizes of five or more"
+ },
+ "26496": {
+ "description": "blank space after a date before a user label in a loan-application header"
+ },
+ "26500": {
+ "description": "first names beginning with A"
+ },
+ "26562": {
+ "description": "the phrase \u201cHigher education\u201d"
+ },
+ "26663": {
+ "description": "the word \u201cKnowledge\u201d in the phrase \u201cCutting Knowledge Date\u201d"
+ },
+ "26672": {
+ "description": "first names beginning with \u201cAd\u201d"
+ },
+ "26677": {
+ "description": "colon after \u201cHousehold size\u201d"
+ },
+ "26779": {
+ "description": "first names starting with \u201cB\u201d"
+ },
+ "26811": {
+ "description": "small household-size numbers and ages"
+ },
+ "26886": {
+ "description": "the word \u201chousehold\u201d"
+ },
+ "26906": {
+ "description": "the month abbreviation \u201cJul\u201d in a date"
+ },
+ "26938": {
+ "description": "month names"
+ },
+ "27082": {
+ "description": "first names beginning with \u201cEv\u201d"
+ },
+ "27139": {
+ "description": "the month abbreviation \u201cJul\u201d in a date"
+ },
+ "27353": {
+ "description": "female given names"
+ },
+ "27686": {
+ "description": "the word \u201cemployment\u201d in demographic/status fields"
+ },
+ "27774": {
+ "description": "the word \u201csystem\u201d at the start of a header line"
+ },
+ "27779": {
+ "description": "female first names beginning with \u201cLash\u201d"
+ },
+ "27815": {
+ "description": "the word \u201csecondary\u201d in education-level fields"
+ },
+ "27933": {
+ "description": "ages in the late 30s to 40s"
+ },
+ "27973": {
+ "description": "Indian given names containing \u201cak\u201d/\u201cah\u201d/\u201cjee\u201d-like syllables"
+ },
+ "28030": {
+ "description": "the digit 4 in a date/year context"
+ },
+ "28164": {
+ "description": "Indian given names containing \u201cush\u201d/\u201corn\u201d/\u201cash\u201d letter sequences"
+ },
+ "28289": {
+ "description": "loan-application applicant/employment fields"
+ },
+ "28297": {
+ "description": "Names starting with \u201cM\u201d"
+ },
+ "28298": {
+ "description": "the number sequence \u201c202\u201d in a date/year context"
+ },
+ "28362": {
+ "description": "first names containing \u201cto\u201d, \u201cdo\u201d, \u201cel\u201d, or \u201ces\u201d near the start"
+ },
+ "28385": {
+ "description": "the phrase \u201chigher education\u201d / \u201cstate servant\u201d fields in a form"
+ },
+ "28491": {
+ "description": "first names beginning with \u201cBr\u201d"
+ },
+ "28527": {
+ "description": "male given names ending in \u201c-io\u201d or containing \u201crak\u201d"
+ },
+ "28534": {
+ "description": "the word \u201cEmployment\u201d / \u201cEmploy\u201d"
+ },
+ "28769": {
+ "description": "the separator after \u201cIncomplete higher\u201d education"
+ },
+ "28831": {
+ "description": "the field label \u201cEducation\u201d in demographic forms"
+ },
+ "28893": {
+ "description": "first names starting with B or Jac-"
+ },
+ "28917": {
+ "description": "the phrase \u201cState servant\u201d"
+ },
+ "29042": {
+ "description": "tokens ending in \u201c-ary\u201d or \u201c-ent\u201d"
+ },
+ "29187": {
+ "description": "the blank separator after \u201cHigher education\u201d"
+ },
+ "29226": {
+ "description": "education field labels or values"
+ },
+ "29229": {
+ "description": "South or Southeast Asian given names containing \u201cang\u201d/\u201cung\u201d/\u201cig\u201d"
+ },
+ "29272": {
+ "description": "ages around 50\u201353"
+ },
+ "29322": {
+ "description": "name fragments containing \u201cuf\u201d or \u201cgas/houston\u201d surname-like strings"
+ },
+ "29369": {
+ "description": "the colon after \u201cEducation\u201d"
+ },
+ "29620": {
+ "description": "the employment type \u201cPensioner\u201d"
+ },
+ "29754": {
+ "description": "female given names"
+ },
+ "30021": {
+ "description": "first names with uncommon/non-English-looking spellings"
+ },
+ "30078": {
+ "description": "household size of 4"
+ },
+ "30090": {
+ "description": "the field label \u201cAge\u201d in application forms"
+ },
+ "30120": {
+ "description": "the \u201c202\u201d prefix in the year 2024"
+ },
+ "30121": {
+ "description": "female first names with uncommon \u201cqu/etta\u201d letter patterns"
+ },
+ "30178": {
+ "description": "employment type field label"
+ },
+ "30308": {
+ "description": "ages around 59\u201367 followed by a household-size field"
+ },
+ "30334": {
+ "description": "the phrase \u201cacademic degree\u201d"
+ },
+ "30568": {
+ "description": "age 27"
+ },
+ "30698": {
+ "description": "the phrase \u201csecondary special\u201d in education level"
+ },
+ "30871": {
+ "description": "first names starting with \u201cTo\u201d or \u201cNo\u201d"
+ },
+ "30914": {
+ "description": "first names beginning with \u201cA\u201d or \u201cBarb-\u201d"
+ },
+ "31022": {
+ "description": "the age value 30"
+ },
+ "31032": {
+ "description": "Names ending in \u201c-son\u201d or similar masculine name endings"
+ },
+ "31140": {
+ "description": "female first names ending in \u201ci\u201d or \u201cia\u201d"
+ },
+ "31159": {
+ "description": "colon after \u201cEducation\u201d"
+ },
+ "31191": {
+ "description": "first names containing \u201com\u201d or \u201cov\u201d/\u201cume\u201d letter sequences"
+ },
+ "31342": {
+ "description": "first names containing uncommon letter sequences like \u201cre,\u201d \u201czek,\u201d or \u201cisha\u201d"
+ },
+ "31599": {
+ "description": "the value \u201c1\u201d after \u201cHousehold size:\u201d"
+ },
+ "31800": {
+ "description": "the word \u201cState\u201d in \u201cState servant\u201d / employment type fields"
+ },
+ "31828": {
+ "description": "female first names ending in \u201ca\u201d or \u201cah\u201d"
+ },
+ "31836": {
+ "description": "male given names of South Asian origin"
+ },
+ "31854": {
+ "description": "first names starting with \u201cMe\u201d"
+ },
+ "31939": {
+ "description": "tokens ending in \u201cm\u201d or \u201ch\u201d"
+ },
+ "32012": {
+ "description": "the word \u201cemployment\u201d in form-like demographic fields"
+ },
+ "32117": {
+ "description": "household size of 1"
+ },
+ "32171": {
+ "description": "applicant first names in loan/application forms"
+ },
+ "32251": {
+ "description": "applicant names with Greco\u2011Italian/classical flavor"
+ },
+ "32354": {
+ "description": "day of month in a date stamp"
+ },
+ "32397": {
+ "description": "the phrase \u201cAcademic degree\u201d"
+ },
+ "32413": {
+ "description": "applicant first names ending in \u201ce\u201d"
+ },
+ "32468": {
+ "description": "first names starting with \u201cMe\u201d"
+ },
+ "32539": {
+ "description": "ages following \u201cAge:\u201d"
+ },
+ "32586": {
+ "description": "ages 23\u201324"
+ },
+ "32618": {
+ "description": "employment type labels"
+ },
+ "32747": {
+ "description": "Names containing \u201cbert\u201d"
+ },
+ "32759": {
+ "description": "name trigrams ending in \u201ca\u201d or \u201cl\u201d"
+ },
+ "2749": {
+ "description": "Asian-sounding applicant first names"
+ },
+ "3353": {
+ "description": "older loan applicants requesting large mortgages"
+ },
+ "3490": {
+ "description": "Indian or South Asian given names"
+ },
+ "3709": {
+ "description": "loan applications from older applicants"
+ },
+ "4963": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "6401": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "7691": {
+ "description": "loan applications with implausibly high debt or payment burden"
+ },
+ "7903": {
+ "description": "loan applications with very high requested loan amounts"
+ },
+ "8575": {
+ "description": "loan applications with unusually large requested amounts"
+ },
+ "9364": {
+ "description": "female-gendered applicant names"
+ },
+ "12415": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "13073": {
+ "description": "female first names"
+ },
+ "13448": {
+ "description": "loan applications with very high requested loan amounts"
+ },
+ "16438": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "16516": {
+ "description": "loan applications with very high requested loan amounts"
+ },
+ "16978": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "18259": {
+ "description": "loan applications with older applicants"
+ },
+ "19020": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "19337": {
+ "description": "loan applications with unusually high requested amounts"
+ },
+ "20830": {
+ "description": "loan applications with high requested loan amounts"
+ },
+ "21063": {
+ "description": "loan applications with unusually high requested amounts"
+ },
+ "21280": {
+ "description": "loan applications with non\u2011Western applicant names"
+ },
+ "22212": {
+ "description": "loan approval amount field at the end"
+ },
+ "24327": {
+ "description": "loan applications with 100% previous approval rate"
+ },
+ "27638": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "27982": {
+ "description": "loan applications with 100% previous approval rate"
+ },
+ "28967": {
+ "description": "loan applications with blank approved amount fields"
+ },
+ "28995": {
+ "description": "loan applications with zero credit card utilization"
+ },
+ "30329": {
+ "description": "loan applications from older applicants"
+ },
+ "31147": {
+ "description": "loan applications with requested loan amounts ending in \u201c6\u201d"
+ },
+ "31445": {
+ "description": "loan applications with zero credit card utilization"
+ },
+ "31791": {
+ "description": "loan applications with unusually high requested loan amounts"
+ },
+ "31976": {
+ "description": "loan applications with zero-dollar approved amount"
+ }
+}

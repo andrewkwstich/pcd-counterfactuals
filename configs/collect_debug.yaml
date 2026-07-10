@@ -1,0 +1,32 @@
+# frozen-artifact collection (DEBUG / minimal run).
+# Same code path as collect_full.yaml; differs only in scale.
+
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct
+
+data:
+  path: data/applications/subject_set.parquet
+  split: qa_pool
+  max_examples: 16
+
+anchor:
+  text: "AMOUNT APPROVED: $"
+  token_id: 400
+
+read_layer: 15
+
+run:
+  name: qa_pool-debug
+
+collect:
+  adapter: artifacts/subject/subject-lora-v1/adapter
+  output_root: artifacts/activations
+  chunk_size: 16
+  z_batch_size: 8
+  amount_batch_size: 8
+  amount_max_new_tokens: 8
+  reasoning_batch_size: 8
+  reasoning_max_new_tokens: 128
+
+minimal_run: true

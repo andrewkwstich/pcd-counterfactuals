@@ -1,0 +1,58 @@
+# ' — name-free text auditor (PRIMARY comparator vs PCD; revised).
+# Identical to configs/baseline_f1_full.yaml except the reasoning source is the
+# regenerated name-free rationale corpus (scripts/regenerate_reasoning.py output,
+# zero-leak gate incl. pronouns). for the fixed
+# PCD-vs-' comparison this feeds.
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct
+wandb_project: pcd-counterfactuals
+qa:
+  path: data/counterfactual_qa/qa_pool/cf_qa.parquet
+  manifest_path: artifacts/activations/qa_pool/reasoning_noname.parquet
+  application_path: data/applications/subject_set.parquet
+  include_application: false
+  train_split: pcd_train
+  val_split: sense1_test
+  val_examples: 2048
+  answer_prompt: '
+
+    Answer:'
+  max_len: 768
+  num_workers: 4
+run:
+  name: baseline-f1prime-v1
+train:
+  output_root: artifacts/baselines
+  subject_adapter: artifacts/subject/subject-lora-v1/adapter
+  lora:
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+  learning_rate: 0.0001
+  betas:
+  - 0.9
+  - 0.999
+  weight_decay: 0.01
+  lr_scheduler_type: cosine
+  per_device_batch_size: 4
+  gradient_accumulation_steps: 8
+  max_grad_norm: 1.0
+  total_steps: 4000
+  checkpoint_step_milestones:
+  - 1000
+  - 2000
+  - 3000
+  val_every_steps: 250
+  log_every_steps: 20
+  report_to: wandb
+  seed: 0
+minimal_run: false

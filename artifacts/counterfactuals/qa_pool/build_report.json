@@ -1,0 +1,43 @@
+{
+  "run_name": "qa_pool",
+  "n_apps": 20000,
+  "n_instances": 372874,
+  "model_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "adapter": "artifacts/subject/subject-lora-v1/adapter",
+  "read_layer": 15,
+  "anchor_token_id": 400,
+  "seed": 41,
+  "counts_by_class": {
+    "quant": 160000,
+    "categorical": 92874,
+    "name_point": 80000,
+    "name_categorical": 40000
+  },
+  "counts_by_split": {
+    "pcd_train": 280759,
+    "sense2": 60889,
+    "sense1_test": 31226
+  },
+  "counts_by_split_fine": {
+    "pcd_train": 280759,
+    "sense1_test": 31226,
+    "sense2_race": 29755,
+    "sense2_attribute": 20000,
+    "sense2_names": 6080,
+    "sense2_phrasing": 5054
+  },
+  "n_z_cf": 74680,
+  "z_cf_path": "artifacts/counterfactuals/qa_pool/z_cf.npy",
+  "z_dim": 4096,
+  "cf_qa_path": "data/counterfactual_qa/qa_pool/cf_qa.parquet",
+  "delta_stats": {
+    "mean_abs_delta": 28484.527915428534,
+    "median_abs_delta": 8100.0,
+    "frac_zero_delta": 0.3235409280346712
+  },
+  "name_categorical_spread": {
+    "mean_std": 40469.08638514452
+  },
+  "seconds": 7219.1,
+  "minimal_run": false
+}

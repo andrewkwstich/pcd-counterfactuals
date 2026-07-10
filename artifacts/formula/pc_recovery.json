@@ -1,0 +1,252 @@
+{
+  "balanced_subsample_n": 4000,
+  "grid": {
+    "1": {
+      "race_full": {
+        "mean_acc": 0.6682500000000001,
+        "std_acc": 0.009171968163922082
+      },
+      "gender_full": {
+        "mean_acc": 0.508,
+        "std_acc": 0.01761746292744786
+      },
+      "race_balanced": {
+        "mean_acc": 0.6682500000000001,
+        "std_acc": 0.009171968163922082
+      },
+      "gender_balanced": {
+        "mean_acc": 0.508,
+        "std_acc": 0.01761746292744786
+      },
+      "cell_balanced": {
+        "mean_acc": 0.379,
+        "std_acc": 0.01574007623869719
+      }
+    },
+    "2": {
+      "race_full": {
+        "mean_acc": 0.7025,
+        "std_acc": 0.006519202405202654
+      },
+      "gender_full": {
+        "mean_acc": 0.5217499999999999,
+        "std_acc": 0.017113591090124825
+      },
+      "race_balanced": {
+        "mean_acc": 0.7025,
+        "std_acc": 0.006519202405202654
+      },
+      "gender_balanced": {
+        "mean_acc": 0.5217499999999999,
+        "std_acc": 0.017113591090124825
+      },
+      "cell_balanced": {
+        "mean_acc": 0.41425,
+        "std_acc": 0.01324292263814903
+      }
+    },
+    "3": {
+      "race_full": {
+        "mean_acc": 0.8055,
+        "std_acc": 0.01001873245475694
+      },
+      "gender_full": {
+        "mean_acc": 0.51325,
+        "std_acc": 0.017916472867168916
+      },
+      "race_balanced": {
+        "mean_acc": 0.8055,
+        "std_acc": 0.01001873245475694
+      },
+      "gender_balanced": {
+        "mean_acc": 0.51325,
+        "std_acc": 0.017916472867168916
+      },
+      "cell_balanced": {
+        "mean_acc": 0.5119999999999999,
+        "std_acc": 0.01319564322039664
+      }
+    },
+    "4": {
+      "race_full": {
+        "mean_acc": 0.8217500000000001,
+        "std_acc": 0.0070975347832892
+      },
+      "gender_full": {
+        "mean_acc": 0.61375,
+        "std_acc": 0.015751984002023357
+      },
+      "race_balanced": {
+        "mean_acc": 0.8217500000000001,
+        "std_acc": 0.0070975347832892
+      },
+      "gender_balanced": {
+        "mean_acc": 0.61375,
+        "std_acc": 0.015751984002023357
+      },
+      "cell_balanced": {
+        "mean_acc": 0.5935,
+        "std_acc": 0.01791298411767288
+      }
+    },
+    "5": {
+      "race_full": {
+        "mean_acc": 0.91175,
+        "std_acc": 0.008609587678861282
+      },
+      "gender_full": {
+        "mean_acc": 0.6162500000000001,
+        "std_acc": 0.01872498331107401
+      },
+      "race_balanced": {
+        "mean_acc": 0.91175,
+        "std_acc": 0.008609587678861282
+      },
+      "gender_balanced": {
+        "mean_acc": 0.6162500000000001,
+        "std_acc": 0.01872498331107401
+      },
+      "cell_balanced": {
+        "mean_acc": 0.7002499999999999,
+        "std_acc": 0.015740076238697175
+      }
+    },
+    "6": {
+      "race_full": {
+        "mean_acc": 0.9109999999999999,
+        "std_acc": 0.00772172260574024
+      },
+      "gender_full": {
+        "mean_acc": 0.961,
+        "std_acc": 0.010880027573494468
+      },
+      "race_balanced": {
+        "mean_acc": 0.9109999999999999,
+        "std_acc": 0.00772172260574024
+      },
+      "gender_balanced": {
+        "mean_acc": 0.961,
+        "std_acc": 0.010880027573494468
+      },
+      "cell_balanced": {
+        "mean_acc": 0.883,
+        "std_acc": 0.00838898086778123
+      }
+    },
+    "8": {
+      "race_full": {
+        "mean_acc": 0.9112500000000001,
+        "std_acc": 0.007416198487095658
+      },
+      "gender_full": {
+        "mean_acc": 0.96075,
+        "std_acc": 0.007053367989832943
+      },
+      "race_balanced": {
+        "mean_acc": 0.9112500000000001,
+        "std_acc": 0.007416198487095658
+      },
+      "gender_balanced": {
+        "mean_acc": 0.96075,
+        "std_acc": 0.007053367989832943
+      },
+      "cell_balanced": {
+        "mean_acc": 0.884,
+        "std_acc": 0.008000000000000007
+      }
+    },
+    "10": {
+      "race_full": {
+        "mean_acc": 0.9157499999999998,
+        "std_acc": 0.00989317946870469
+      },
+      "gender_full": {
+        "mean_acc": 0.9640000000000001,
+        "std_acc": 0.007842193570679078
+      },
+      "race_balanced": {
+        "mean_acc": 0.9157499999999998,
+        "std_acc": 0.00989317946870469
+      },
+      "gender_balanced": {
+        "mean_acc": 0.9640000000000001,
+        "std_acc": 0.007842193570679078
+      },
+      "cell_balanced": {
+        "mean_acc": 0.88975,
+        "std_acc": 0.008038967595406782
+      }
+    },
+    "15": {
+      "race_full": {
+        "mean_acc": 0.9275,
+        "std_acc": 0.00883883476483184
+      },
+      "gender_full": {
+        "mean_acc": 0.9654999999999999,
+        "std_acc": 0.007648529270389145
+      },
+      "race_balanced": {
+        "mean_acc": 0.9275,
+        "std_acc": 0.00883883476483184
+      },
+      "gender_balanced": {
+        "mean_acc": 0.9654999999999999,
+        "std_acc": 0.007648529270389145
+      },
+      "cell_balanced": {
+        "mean_acc": 0.9022500000000001,
+        "std_acc": 0.010167349703831374
+      }
+    },
+    "20": {
+      "race_full": {
+        "mean_acc": 0.9259999999999999,
+        "std_acc": 0.008565920849505911
+      },
+      "gender_full": {
+        "mean_acc": 0.9644999999999999,
+        "std_acc": 0.006782329983125263
+      },
+      "race_balanced": {
+        "mean_acc": 0.9259999999999999,
+        "std_acc": 0.008565920849505911
+      },
+      "gender_balanced": {
+        "mean_acc": 0.9644999999999999,
+        "std_acc": 0.006782329983125263
+      },
+      "cell_balanced": {
+        "mean_acc": 0.899,
+        "std_acc": 0.008710625695092176
+      }
+    },
+    "30": {
+      "race_full": {
+        "mean_acc": 0.9295,
+        "std_acc": 0.0065000000000000275
+      },
+      "gender_full": {
+        "mean_acc": 0.9650000000000001,
+        "std_acc": 0.005755432216610677
+      },
+      "race_balanced": {
+        "mean_acc": 0.9295,
+        "std_acc": 0.0065000000000000275
+      },
+      "gender_balanced": {
+        "mean_acc": 0.9650000000000001,
+        "std_acc": 0.005755432216610677
+      },
+      "cell_balanced": {
+        "mean_acc": 0.9010000000000001,
+        "std_acc": 0.009727538229171866
+      }
+    }
+  },
+  "chance": {
+    "race_balanced": 0.25,
+    "gender_balanced": 0.5,
+    "cell_balanced": 0.125
+  }
+}

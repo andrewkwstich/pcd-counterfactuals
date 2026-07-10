@@ -1,0 +1,10 @@
+{
+  "tag": "final",
+  "tokens": 36001792,
+  "step": 17579,
+  "n_concepts": 32768,
+  "k": 16,
+  "n_alive": 26539,
+  "n_dead": 6229,
+  "frac_alive": 0.809906005859375
+}

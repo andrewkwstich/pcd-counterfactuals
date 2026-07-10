@@ -1,0 +1,17 @@
+{
+  "run_name": "baseline-f1prime-v1",
+  "steps": 4000,
+  "mode": "reasoning-only",
+  "include_application": false,
+  "elapsed_seconds": 6930.5,
+  "final_qa_loss_ema": 0.6059936931377861,
+  "val_qa_loss": 0.8693,
+  "val_answer_tok_acc": 0.793,
+  "val_exact_match": 0.3838,
+  "val_n": 2048,
+  "epochs": 7,
+  "num_processes": 4,
+  "effective_batch": 128,
+  "peak_gpu_gib": 52.05,
+  "minimal_run": false
+}

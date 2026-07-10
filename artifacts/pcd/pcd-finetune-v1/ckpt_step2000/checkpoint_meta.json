@@ -1,0 +1,6 @@
+{
+  "tag": "ckpt_step2000",
+  "step": 2000,
+  "encoder_ckpt": "artifacts/pcd/pcd-pretrain-v2/final/encoder.pt",
+  "decoder_lora_init": "artifacts/pcd/pcd-pretrain-v2/final/decoder_lora"
+}

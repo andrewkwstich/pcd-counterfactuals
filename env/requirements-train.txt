@@ -1,0 +1,30 @@
+# Stage B+ training stack (CUDA pod).
+#
+# VERIFIED 2026-07-06 on the Stage B pod (1xH100, torch 2.8.0+cu128 image):
+# the resolved set passed the B1 minimal run. Exact pins frozen in
+# env/requirements-train.lock.txt — prefer the lockfile for reproduction.
+# NOTE: transformers resolved to 5.x (major); code in src/subject uses the
+# v5 API names (eval_strategy, processing_class, dtype=, warmup_steps).
+#
+# torch is preinstalled on most RunPod PyTorch images; only install it
+# explicitly if you must, and match the image's CUDA build if you do.
+
+torch>=2.4
+transformers>=4.44
+peft>=0.12
+trl>=0.9
+accelerate>=0.33
+datasets>=2.20
+bitsandbytes>=0.43
+safetensors
+sentencepiece
+scikit-learn        # B2 localization probe
+pandas
+pyarrow
+numpy
+wandb               # live loss / token-count dashboard (plan E1)
+pytest              # unit tests (tests/)
+
+# Optional, only if the image supports them:
+# flash-attn>=2.6
+# deepspeed>=0.14   # Stage E1 only

@@ -1,0 +1,17 @@
+{
+  "run_name": "pcd-pretrain-v2",
+  "tokens": 36001792,
+  "steps": 17579,
+  "elapsed_seconds": 11226.1,
+  "tokens_per_sec": 3207.0,
+  "final_loss": 2.353095531463623,
+  "final_lm_loss": 2.3531084060668945,
+  "num_processes": 4,
+  "effective_batch": 128,
+  "token_accounting": "encoder",
+  "peak_gpu_gib": 38.75,
+  "n_alive": 29755,
+  "n_dead": 3013,
+  "frac_alive": 0.908050537109375,
+  "minimal_run": false
+}

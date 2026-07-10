@@ -1,0 +1,23 @@
+{
+  "source": "fineweb",
+  "hf_name": "HuggingFaceFW/fineweb",
+  "hf_subset": "sample-10BT",
+  "docs_streamed": 1433014,
+  "domain_docs": 12000,
+  "general_docs": 240000,
+  "finance_hit_rate": 0.00837,
+  "min_chars": 400,
+  "finance_min_strong": 3,
+  "finance_min_distinct": 2,
+  "seconds": 292.6,
+  "domain_sample": [
+    "TOPEKA, Kan. (2/26/08)--Kansas credit union supporters answered the last questions of a Senate subcommittee Friday in response to SB 535, a bill introduced by the Kansas Banking Association (KBA) that",
+    "It\u2019s a standard piece of cynicism that the addition of a qualifier to a field of study means that said study ends up not being in that field at all. \u201cSocial justice\u201d is, for example, quite divorced fr",
+    "Stocks Hit Highs While Uncertain Credit Union Members Continue to Save The Dow Jones industrial average in recent days has ended a surge that the markets hadn\u2019t seen in 17 years. For some, it was one ",
+    "A $50,000 House - But At What Cost? Can you still get a house for $50,000? The answer may surprise you. While, the average U.S. home price is $181,000 and for more than $130,000 less than that, you ca",
+    "The Mishna on today\u2019s daf focuses on the role of an arev \u2013 someone who agrees to guarantee a loan. According to the Mishna, although the arev agreed to be responsible for the loan, nevertheless the le",
+    "You are leaving the Dutch Point Credit gifts for male employees for christmas Union Website. Heres how to sign up for Sprint cash rewards: Become a Sprint customer. The Savings Keep Growing for Scott ",
+    "Loans For Down Payment On Home \u2013 interest calculator home loan list mortgage companies 30 fixed mortgage rates today And you can do it all from the comfort of your own home, with a cup of coffee to ke",
+    "Spring Hill FL First Time Home Buyers\u2013 Get Help Cutting Through The Economic Haze Spring Hill FL first-time home buyers in 2014 are faced with a question that hasn\u2019t changed for generations: is it mor"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "thresholds": {
+    "race_purity_min": 0.7,
+    "gender_conf_min": 0.9,
+    "ssa_min_births": 200,
+    "cell_size_target": 500,
+    "ssa_year_min": 1950
+  },
+  "pool_size": 135736,
+  "pool_gender_coverage_by_source": {
+    "NaN": 66472,
+    "names_dataset": 46121,
+    "ssa": 23143
+  },
+  "cells": {
+    "white_female": {
+      "eligible": 5983,
+      "taken": 500,
+      "min_p_name_given_race_taken": 4.3633927777355776e-05,
+      "gender_source_counts": {
+        "ssa": 500
+      }
+    },
+    "white_male": {
+      "eligible": 4186,
+      "taken": 500,
+      "min_p_name_given_race_taken": 1.5696562397225087e-05,
+      "gender_source_counts": {
+        "ssa": 500
+      }
+    },
+    "black_female": {
+      "eligible": 6996,
+      "taken": 500,
+      "min_p_name_given_race_taken": 3.1603473040057946e-05,
+      "gender_source_counts": {
+        "ssa": 498,
+        "names_dataset": 2
+      }
+    },
+    "black_male": {
+      "eligible": 3997,
+      "taken": 500,
+      "min_p_name_given_race_taken": 1.6461337137017478e-05,
+      "gender_source_counts": {
+        "ssa": 487,
+        "names_dataset": 13
+      }
+    },
+    "hispanic_female": {
+      "eligible": 4507,
+      "taken": 500,
+      "min_p_name_given_race_taken": 3.587337551817537e-05,
+      "gender_source_counts": {
+        "ssa": 403,
+        "names_dataset": 97
+      }
+    },
+    "hispanic_male": {
+      "eligible": 1746,
+      "taken": 500,
+      "min_p_name_given_race_taken": 1.4275601711344383e-05,
+      "gender_source_counts": {
+        "ssa": 408,
+        "names_dataset": 92
+      }
+    },
+    "asian_female": {
+      "eligible": 1581,
+      "taken": 500,
+      "min_p_name_given_race_taken": 2.7656705685457495e-05,
+      "gender_source_counts": {
+        "names_dataset": 320,
+        "ssa": 180
+      }
+    },
+    "asian_male": {
+      "eligible": 1650,
+      "taken": 500,
+      "min_p_name_given_race_taken": 2.6895511950995363e-05,
+      "gender_source_counts": {
+        "names_dataset": 295,
+        "ssa": 205
+      }
+    }
+  },
+  "final_counts": {
+    "asian_female": 500,
+    "hispanic_male": 500,
+    "asian_male": 500,
+    "hispanic_female": 500,
+    "black_male": 500,
+    "black_female": 500,
+    "white_male": 500,
+    "white_female": 500
+  },
+  "sample_gender_source_counts": {
+    "ssa": 3181,
+    "names_dataset": 819
+  }
+}

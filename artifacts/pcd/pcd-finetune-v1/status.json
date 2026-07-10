@@ -1,0 +1,23 @@
+{
+  "state": "completed",
+  "step": 4000,
+  "total_steps": 4000,
+  "tokens": 512000,
+  "max_tokens": 512000,
+  "pct_complete": 100.0,
+  "tokens_per_sec": 190.9,
+  "eta_seconds": null,
+  "elapsed_seconds": 2683,
+  "pid": 38717,
+  "updated_at": "2026-07-08T10:52:34+0000",
+  "qa_loss_ema": 1.2558,
+  "lm_loss_ema": 2.6637,
+  "train_answer_tok_acc": 0.7308,
+  "lr": 0.0,
+  "qa_epoch": 0,
+  "steps_per_sec": 1.492,
+  "val_qa_loss": 1.2982,
+  "val_answer_tok_acc": 0.7354,
+  "val_exact_match": 0.272,
+  "val_n": 2048
+}

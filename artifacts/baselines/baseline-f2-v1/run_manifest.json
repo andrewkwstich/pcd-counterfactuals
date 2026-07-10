@@ -1,0 +1,73 @@
+{
+  "run_name": "baseline-f2-v1",
+  "model_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "git_commit": "5803869e071d360fd8347fba285bddd29de72275",
+  "num_processes": 4,
+  "effective_batch": 128,
+  "total_steps": 4000,
+  "mode": "full-application",
+  "include_application": true,
+  "train_examples": 280759,
+  "val_examples": 2048,
+  "config": {
+    "model": {
+      "base": "meta-llama/Llama-3.1-8B-Instruct",
+      "tokenizer_mirror": "unsloth/Meta-Llama-3.1-8B-Instruct"
+    },
+    "wandb_project": "pcd-counterfactuals",
+    "qa": {
+      "path": "data/counterfactual_qa/qa_pool/cf_qa.parquet",
+      "manifest_path": "artifacts/activations/qa_pool/collect_manifest.parquet",
+      "application_path": "data/applications/subject_set.parquet",
+      "include_application": true,
+      "train_split": "pcd_train",
+      "val_split": "sense1_test",
+      "val_examples": 2048,
+      "answer_prompt": "\nAnswer:",
+      "max_len": 768,
+      "num_workers": 4
+    },
+    "run": {
+      "name": "baseline-f2-v1"
+    },
+    "train": {
+      "output_root": "artifacts/baselines",
+      "subject_adapter": "artifacts/subject/subject-lora-v1/adapter",
+      "lora": {
+        "r": 16,
+        "alpha": 32,
+        "dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ]
+      },
+      "learning_rate": 0.0001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.01,
+      "lr_scheduler_type": "cosine",
+      "per_device_batch_size": 4,
+      "gradient_accumulation_steps": 8,
+      "max_grad_norm": 1.0,
+      "total_steps": 4000,
+      "checkpoint_step_milestones": [
+        1000,
+        2000,
+        3000
+      ],
+      "val_every_steps": 250,
+      "log_every_steps": 20,
+      "report_to": "wandb",
+      "seed": 0
+    },
+    "minimal_run": false
+  }
+}

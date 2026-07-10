@@ -1,0 +1,36 @@
+# counterfactual QA build (DEBUG / minimal run).
+# Same code path as cf_dataset_full.yaml; tiny scale. Use with --minimal-run.
+
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct
+
+data:
+  path: data/applications/subject_set.parquet
+  split: qa_pool
+  manifest: artifacts/activations/qa_pool/collect_manifest.parquet
+  max_apps: 24
+
+anchor:
+  text: "AMOUNT APPROVED: $"
+  token_id: 400
+read_layer: 15
+
+run:
+  name: qa_pool-debug
+
+build:
+  adapter: artifacts/subject/subject-lora-v1/adapter
+  art_root: artifacts/counterfactuals
+  data_root: data/counterfactual_qa
+  seed: 41
+  sense1_app_frac: 0.10
+  n_name_point: 4
+  n_name_categorical: 2
+  mc_m: 4
+  chunk_apps: 24
+  amount_batch_size: 64
+  amount_max_new_tokens: 8
+  z_batch_size: 64
+
+minimal_run: true

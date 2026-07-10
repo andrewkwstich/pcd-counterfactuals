@@ -1,0 +1,62 @@
+{
+  "proposal": "H1 short-budget LR ladder",
+  "pilot_steps": 500,
+  "tie_tol": 0.02,
+  "results": [
+    {
+      "lr": 5e-05,
+      "run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr5e-05",
+      "returncode": 0,
+      "eval_loss": 2.273892641067505,
+      "decode_n": 256,
+      "decode_parse_rate": 1.0,
+      "decode_trailing_junk_rate": 0.0,
+      "decode_mae": 48606.046875,
+      "decode_medae": 24300.0,
+      "decode_r2": 0.9123252005650583,
+      "decode_seconds": 3.3
+    },
+    {
+      "lr": 0.0001,
+      "run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr0.0001",
+      "returncode": 0,
+      "eval_loss": 2.2670600414276123,
+      "decode_n": 256,
+      "decode_parse_rate": 1.0,
+      "decode_trailing_junk_rate": 0.0,
+      "decode_mae": 49406.14453125,
+      "decode_medae": 24600.0,
+      "decode_r2": 0.9083410359124134,
+      "decode_seconds": 3.2
+    },
+    {
+      "lr": 0.0002,
+      "run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr0.0002",
+      "returncode": 0,
+      "eval_loss": 2.2657363414764404,
+      "decode_n": 256,
+      "decode_parse_rate": 1.0,
+      "decode_trailing_junk_rate": 0.0,
+      "decode_mae": 50129.0390625,
+      "decode_medae": 24200.0,
+      "decode_r2": 0.9047737700898922,
+      "decode_seconds": 3.3
+    },
+    {
+      "lr": 0.0004,
+      "run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr0.0004",
+      "returncode": 0,
+      "eval_loss": 2.297586441040039,
+      "decode_n": 256,
+      "decode_parse_rate": 1.0,
+      "decode_trailing_junk_rate": 0.0,
+      "decode_mae": 56334.5234375,
+      "decode_medae": 28700.0,
+      "decode_r2": 0.8943096080206534,
+      "decode_seconds": 3.2
+    }
+  ],
+  "winner_lr": 5e-05,
+  "winner_run_dir": "/workspace/pcd-counterfactuals/artifacts/subject/hpo/hpo-lr5e-05",
+  "note": "run full training with train.learning_rate = winner_lr"
+}

@@ -1,0 +1,167 @@
+{
+ "2749": {
+ "description": "Asian-sounding applicant first names",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7732940912246704
+ },
+ "3353": {
+ "description": "older loan applicants requesting large mortgages",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.6947563290596008
+ },
+ "3490": {
+ "description": "Indian or South Asian given names",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.8009796738624573
+ },
+ "3709": {
+ "description": "loan applications from older applicants",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7216882109642029
+ },
+ "4963": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.9971832036972046
+ },
+ "6401": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7073673009872437
+ },
+ "7691": {
+ "description": "loan applications with implausibly high debt or payment burden",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7678013443946838
+ },
+ "7903": {
+ "description": "loan applications with very high requested loan amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.6760073304176331
+ },
+ "8575": {
+ "description": "loan applications with unusually large requested amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 1.059715986251831
+ },
+ "9364": {
+ "description": "female-gendered applicant names",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7129188776016235
+ },
+ "12415": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.6623502373695374
+ },
+ "13073": {
+ "description": "female first names",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.9997721910476685
+ },
+ "13448": {
+ "description": "loan applications with very high requested loan amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7011440396308899
+ },
+ "16438": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 1.111221432685852
+ },
+ "16516": {
+ "description": "loan applications with very high requested loan amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 1.3032552003860474
+ },
+ "16978": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.8098923563957214
+ },
+ "18259": {
+ "description": "loan applications with older applicants",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7362373471260071
+ },
+ "19020": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7113656401634216
+ },
+ "19337": {
+ "description": "loan applications with unusually high requested amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7136217355728149
+ },
+ "20830": {
+ "description": "loan applications with high requested loan amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.6969286799430847
+ },
+ "21063": {
+ "description": "loan applications with unusually high requested amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7815791368484497
+ },
+ "21280": {
+ "description": "loan applications with non\u2011Western applicant names",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7195887565612793
+ },
+ "22212": {
+ "description": "loan approval amount field at the end",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 1.0427560806274414
+ },
+ "24327": {
+ "description": "loan applications with 100% previous approval rate",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.8124856352806091
+ },
+ "27638": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.6964118480682373
+ },
+ "27982": {
+ "description": "loan applications with 100% previous approval rate",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7940014004707336
+ },
+ "28967": {
+ "description": "loan applications with blank approved amount fields",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7676884531974792
+ },
+ "28995": {
+ "description": "loan applications with zero credit card utilization",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7302275896072388
+ },
+ "30329": {
+ "description": "loan applications from older applicants",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.861042857170105
+ },
+ "31147": {
+ "description": "loan applications with requested loan amounts ending in \u201c6\u201d",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7436808347702026
+ },
+ "31445": {
+ "description": "loan applications with zero credit card utilization",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 1.4644584655761719
+ },
+ "31791": {
+ "description": "loan applications with unusually high requested loan amounts",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.667012095451355
+ },
+ "31976": {
+ "description": "loan applications with zero-dollar approved amount",
+ "source": "stage_g_readout_labeling",
+ "max_activation": 0.7237297892570496
+ }
+}

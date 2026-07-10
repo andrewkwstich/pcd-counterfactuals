@@ -1,0 +1,108 @@
+{
+  "run_name": "pcd-pretrain-v1",
+  "model_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "git_commit": "d3f73e331ee667eab59914922249162cf8f8a01d",
+  "num_processes": 4,
+  "effective_batch": 128,
+  "tokens_per_opt_step": 2048,
+  "total_steps": 17579,
+  "max_tokens": 36000000,
+  "token_accounting": "encoder",
+  "config": {
+    "model": {
+      "base": "meta-llama/Llama-3.1-8B-Instruct",
+      "tokenizer_mirror": "unsloth/Meta-Llama-3.1-8B-Instruct"
+    },
+    "read_layer": 15,
+    "wandb_project": "pcd-counterfactuals",
+    "encoder": {
+      "n_concepts": 32768,
+      "k": 16,
+      "aux_k": 500,
+      "aux_coef": 0.0001,
+      "dead_window_tokens": 1000000
+    },
+    "data": {
+      "seq": {
+        "n_prefix": 16,
+        "n_middle": 16,
+        "n_suffix": 16
+      },
+      "window": "random",
+      "instruct_prefix": true,
+      "num_workers": 8,
+      "anchor_text": "AMOUNT APPROVED: $",
+      "anchor_token_id": 400,
+      "mixture": {
+        "general": 0.72,
+        "domain": 0.18,
+        "application": 0.1
+      },
+      "general": {
+        "source": "cache",
+        "cache_file": "data/pretrain_cache/general.parquet",
+        "hf_name": "HuggingFaceFW/fineweb",
+        "hf_subset": "sample-10BT",
+        "hf_split": "train",
+        "min_chars": 400
+      },
+      "domain": {
+        "source": "cache",
+        "cache_file": "data/pretrain_cache/domain.parquet"
+      },
+      "domain_reject_limit": 300,
+      "application": {
+        "path": "data/applications/subject_set.parquet",
+        "split": "subject_train",
+        "name_split_path": "data/names/name_splits.parquet",
+        "name_split": "pcd_train",
+        "exclude_races": [
+          "asian"
+        ],
+        "append_amount": true,
+        "mask_decision_line": true
+      }
+    },
+    "run": {
+      "name": "pcd-pretrain-v1"
+    },
+    "train": {
+      "output_root": "artifacts/pcd",
+      "subject_adapter": "artifacts/subject/subject-lora-v1/adapter",
+      "lora": {
+        "r": 16,
+        "alpha": 32,
+        "dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ]
+      },
+      "learning_rate": 0.0001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "weight_decay": 0.01,
+      "lr_scheduler_type": "cosine",
+      "per_device_batch_size": 8,
+      "gradient_accumulation_steps": 4,
+      "max_grad_norm": 1.0,
+      "max_tokens": 36000000,
+      "token_accounting": "encoder",
+      "checkpoint_token_milestones": [
+        9000000,
+        18000000
+      ],
+      "log_every_steps": 20,
+      "report_to": "wandb",
+      "seed": 0
+    },
+    "minimal_run": false
+  }
+}

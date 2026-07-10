@@ -1,0 +1,78 @@
+# pretraining-scale variant: finetune from the 9M-token checkpoint.
+# Identical recipe to configs/pcd_finetune_full.yaml except encoder/decoder init,
+# run name, no milestone checkpoints, and no auto-interp labels in the readout
+# (labeled the 36M encoder only). Supports the plan-G scaling curve.
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct
+read_layer: 15
+wandb_project: pcd-counterfactuals
+encoder:
+  ckpt: artifacts/pcd/pcd-pretrain-v2/ckpt_9M/encoder.pt
+  d_model: 4096
+  n_concepts: 32768
+  k: 16
+qa:
+  path: data/counterfactual_qa/qa_pool/cf_qa.parquet
+  z_path: artifacts/activations/qa_pool/z_original.npy
+  train_split: pcd_train
+  val_split: sense1_test
+  val_examples: 2048
+  answer_prompt: '
+
+    Answer:'
+  num_workers: 2
+lm_data:
+  seq:
+    n_prefix: 16
+    n_middle: 16
+    n_suffix: 16
+  window: random
+  instruct_prefix: true
+  num_workers: 4
+  anchor_text: 'AMOUNT APPROVED: $'
+  anchor_token_id: 400
+  mixture:
+    general: 0.72
+    domain: 0.18
+    application: 0.1
+  general:
+    source: cache
+    cache_file: data/pretrain_cache/general.parquet
+    min_chars: 400
+  domain:
+    source: cache
+    cache_file: data/pretrain_cache/domain.parquet
+  application:
+    path: data/applications/subject_set.parquet
+    split: subject_train
+    name_split_path: data/names/name_splits.parquet
+    name_split: pcd_train
+    exclude_races:
+    - asian
+    append_amount: true
+    mask_decision_line: true
+readout:
+  manifest_path: artifacts/activations/qa_pool/collect_manifest.parquet
+run:
+  name: pcd-finetune-9M
+train:
+  output_root: artifacts/pcd
+  subject_adapter: artifacts/subject/subject-lora-v1/adapter
+  decoder_lora_init: artifacts/pcd/pcd-pretrain-v2/ckpt_9M/decoder_lora
+  learning_rate: 0.0001
+  betas:
+  - 0.9
+  - 0.999
+  weight_decay: 0.01
+  lr_scheduler_type: cosine
+  per_device_batch_size: 8
+  gradient_accumulation_steps: 4
+  max_grad_norm: 1.0
+  total_steps: 4000
+  checkpoint_step_milestones: []
+  val_every_steps: 250
+  log_every_steps: 20
+  report_to: wandb
+  seed: 0
+minimal_run: false

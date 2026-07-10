@@ -1,0 +1,41 @@
+# auto-interp labeling (DEBUG / single-H100, mock LLM, synthetic corpus).
+#
+#     python scripts/autointerp_pcd.py --config configs/pcd_autointerp_debug.yaml
+#     python scripts/autointerp_pcd.py --config configs/pcd_autointerp_debug.yaml --minimal-run
+#
+# No encoder_ckpt -> a randomly-initialized encoder (path validation only);
+# point encoder_ckpt at an debug checkpoint to inspect real concepts.
+
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct
+
+read_layer: 15
+
+encoder:
+  n_concepts: 32768
+  k: 16
+
+run:
+  name: autointerp-debug
+
+autointerp:
+  output_root: artifacts/pcd
+  subject_adapter: artifacts/subject/subject-lora-v1/adapter
+  encoder_ckpt: null                                    # random encoder (path validation)
+  corpus:
+    source: applications
+    path: data/applications/subject_set.parquet
+    split: qa_pool
+  seq_len: 64
+  max_passages: 256
+  batch_passages: 32
+  top_n: 20
+  ctx_radius: 8
+  n_concepts_to_label: 64
+  n_describe: 10
+  seed: 0
+  llm:
+    backend: mock
+
+minimal_run: false

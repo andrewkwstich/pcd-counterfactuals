@@ -1,0 +1,21 @@
+{
+ "model": "gpt-5.4",
+ "summary": {
+ "B": {
+ "n": 8,
+ "hit_rate": 1.0,
+ "direction_rate": 0.875
+ },
+ "C": {
+ "n": 12,
+ "hit_rate": 1.0,
+ "direction_rate": 0.333
+ },
+ "A": {
+ "n": 12,
+ "hit_rate": 1.0,
+ "direction_rate": 0.833
+ }
+ },
+ "note": "hit = surfaces name/demographic dependence; direction = correct favored/penalized ordering; all outputs saved, none discarded"
+}

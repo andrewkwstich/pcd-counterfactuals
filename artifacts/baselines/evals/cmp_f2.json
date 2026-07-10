@@ -1,0 +1,74 @@
+{
+  "sense1_test": {
+    "categorical": {
+      "n": 128,
+      "sign_acc": 0.828,
+      "sign_acc_committed": 0.991,
+      "pred_zero_rate": 0.164,
+      "mae": 13242.0,
+      "zero_baseline_mae": 40236.0
+    },
+    "name_categorical": {
+      "n": 128,
+      "sign_acc": 0.961,
+      "sign_acc_committed": 0.961,
+      "pred_zero_rate": 0.0,
+      "mae": 14497.0,
+      "zero_baseline_mae": 36570.0
+    },
+    "name_point": {
+      "n": 128,
+      "sign_acc": 0.797,
+      "sign_acc_committed": 0.944,
+      "pred_zero_rate": 0.156,
+      "mae": 16159.0,
+      "zero_baseline_mae": 64423.0
+    },
+    "quant": {
+      "n": 128,
+      "sign_acc": 0.711,
+      "sign_acc_committed": 0.91,
+      "pred_zero_rate": 0.219,
+      "mae": 16047.0,
+      "zero_baseline_mae": 34397.0
+    }
+  },
+  "sense2_names": {
+    "name_point": {
+      "n": 128,
+      "sign_acc": 0.859,
+      "sign_acc_committed": 0.982,
+      "pred_zero_rate": 0.125,
+      "mae": 10435.0,
+      "zero_baseline_mae": 50535.0
+    }
+  },
+  "sense2_race": {
+    "name_categorical": {
+      "n": 128,
+      "sign_acc": 0.797,
+      "sign_acc_committed": 0.823,
+      "pred_zero_rate": 0.031,
+      "mae": 20733.0,
+      "zero_baseline_mae": 45096.0
+    },
+    "name_point": {
+      "n": 128,
+      "sign_acc": 0.914,
+      "sign_acc_committed": 1.0,
+      "pred_zero_rate": 0.086,
+      "mae": 13749.0,
+      "zero_baseline_mae": 68286.0
+    }
+  },
+  "sense2_phrasing": {
+    "name_categorical": {
+      "n": 128,
+      "sign_acc": 0.812,
+      "sign_acc_committed": 0.846,
+      "pred_zero_rate": 0.039,
+      "mae": 15721.0,
+      "zero_baseline_mae": 38676.0
+    }
+  }
+}

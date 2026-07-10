@@ -1,0 +1,53 @@
+{
+  "kind": "f1prime",
+  "run": "artifacts/baselines/baseline-f1prime-v1",
+  "variant": "real",
+  "results": {
+    "sense1_test": {
+      "categorical": {
+        "n": 4880,
+        "fc_sign_acc": 0.843
+      },
+      "name_categorical": {
+        "n": 2339,
+        "fc_sign_acc": 0.8179
+      },
+      "name_point": {
+        "n": 4039,
+        "fc_sign_acc": 0.8462
+      },
+      "quant": {
+        "n": 9608,
+        "fc_sign_acc": 0.8022
+      }
+    },
+    "sense2_names": {
+      "name_point": {
+        "n": 4508,
+        "fc_sign_acc": 0.8685
+      }
+    },
+    "sense2_race": {
+      "name_categorical": {
+        "n": 9311,
+        "fc_sign_acc": 0.7893
+      },
+      "name_point": {
+        "n": 15243,
+        "fc_sign_acc": 0.8235
+      }
+    },
+    "sense2_phrasing": {
+      "name_categorical": {
+        "n": 4810,
+        "fc_sign_acc": 0.7792
+      }
+    },
+    "sense2_attribute": {
+      "categorical": {
+        "n": 12053,
+        "fc_sign_acc": 0.8104
+      }
+    }
+  }
+}

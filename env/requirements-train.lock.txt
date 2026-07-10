@@ -1,0 +1,24 @@
+# Exact versions VERIFIED on the Stage B pod (1xH100, CUDA 12.8 image,
+# Python 3.12.3, torch preinstalled by the image) — minimal run passed
+# 2026-07-06 with this set. torch is image-provided; do not reinstall.
+#
+#   pip install -r env/requirements-train.lock.txt
+#
+PyYAML==6.0.3
+accelerate==1.14.0
+bitsandbytes==0.49.2
+datasets==5.0.0
+huggingface_hub==1.22.0
+numpy==2.1.2
+pandas==3.0.3
+peft==0.19.1
+pyarrow==24.0.0
+pytest==9.1.1
+safetensors==0.8.0
+scikit-learn==1.9.0
+sentencepiece==0.2.1
+tokenizers==0.22.2
+# torch==2.8.0+cu128   # image-provided; match the image's CUDA build if installing
+transformers==5.13.0
+trl==1.7.1
+wandb==0.28.0

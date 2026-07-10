@@ -1,0 +1,53 @@
+{
+  "kind": "pcd",
+  "run": "artifacts/pcd/pcd-finetune-v1",
+  "variant": "scramble",
+  "results": {
+    "sense1_test": {
+      "categorical": {
+        "n": 4880,
+        "fc_sign_acc": 0.7797
+      },
+      "name_categorical": {
+        "n": 2339,
+        "fc_sign_acc": 0.5477
+      },
+      "name_point": {
+        "n": 4039,
+        "fc_sign_acc": 0.6816
+      },
+      "quant": {
+        "n": 9608,
+        "fc_sign_acc": 0.7394
+      }
+    },
+    "sense2_names": {
+      "name_point": {
+        "n": 4508,
+        "fc_sign_acc": 0.681
+      }
+    },
+    "sense2_race": {
+      "name_categorical": {
+        "n": 9311,
+        "fc_sign_acc": 0.5068
+      },
+      "name_point": {
+        "n": 15243,
+        "fc_sign_acc": 0.6259
+      }
+    },
+    "sense2_phrasing": {
+      "name_categorical": {
+        "n": 4810,
+        "fc_sign_acc": 0.516
+      }
+    },
+    "sense2_attribute": {
+      "categorical": {
+        "n": 12053,
+        "fc_sign_acc": 0.7435
+      }
+    }
+  }
+}

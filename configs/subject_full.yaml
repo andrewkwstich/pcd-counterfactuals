@@ -1,0 +1,90 @@
+# subject fine-tune (FULL / single-H100 variant)
+#
+# ***PROVISIONAL hyperparameters.*** Settled facts (verified in — do
+# not change casually): anchor token id 400, read_layer 15, free-form digit
+# output, greedy decode, next-token CE on answer tokens only, plain completion
+# format (no chat template).
+#
+# The train.* values below are concrete pre-HPO defaults chosen from current
+# LoRA-SFT practice for Llama-3.1-8B; the short-budget HPO sweep (see 
+# proposals) refines learning_rate (and optionally lora.r) before the full run.
+# Sized for 1×H100: ~168-token examples, effective batch 32 -> 3125 steps/epoch.
+
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct        # gated; needs HF_TOKEN on the pod
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct  # ungated, id-identical; auto-fallback
+
+data:
+  path: data/applications/subject_set.parquet   # upload to the pod (heavy, gitignored)
+  text_col: application_text
+  label_col: amount
+  train_split: subject_train                    # 100k
+  val_split: subject_val                        # 5k
+  max_train_examples: null                      # null = all
+  max_val_examples: 2048 # CE-eval subsample (speed); uses full 5k
+
+anchor:
+  text: "AMOUNT APPROVED: $"
+  token_id: 400 # SETTLED ()
+
+read_layer: 15                                  # SETTLED (l_read)
+
+run:
+  name: subject-lora-v1
+  output_root: artifacts/subject                # gitignored; rsync to local disk
+
+train:
+  loss: next_token_ce_on_answer                 # SETTLED: teacher-forced, avg over answer tokens
+  output_format: freeform_digits                # SETTLED: no MC, no options in prompt
+  decode: greedy                                # SETTLED
+  finetune_method: lora # fallback to full FT only if fails
+  lora:
+    r: 32                                       # HPO-optional
+    alpha: 64                                   # = 2r convention
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  learning_rate: 5.0e-5                         # HPO winner (artifacts/subject/hpo/hpo_summary.json):
+                                                # mae 48.6K < 1e-4 (49.4K) < 2e-4 (50.1K) < 4e-4 (56.3K)
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  per_device_batch_size: 16
+  eval_batch_size: 32
+  gradient_accumulation_steps: 2                # effective batch 32
+  num_epochs: 2 # resist scaling up
+  max_steps: null                               # null = derive from epochs
+  max_seq_len: 256                              # p99 example is ~174 tokens; assert, never truncate
+  bf16: true
+  gradient_checkpointing: false                 # not memory-bound at this seq len
+  seed: 17
+  # --- monitoring / eval cadence ---
+  logging_steps: 10
+  eval_steps: 200                               # CE on val subsample
+  decode_eval_examples: 256                     # greedy-decode MAE/R^2/parse-rate at each eval
+  decode_eval_batch_size: 32
+  max_new_tokens: 8
+  save_strategy: steps
+  save_steps: 500
+  save_total_limit: 3
+  report_to: wandb                              # M1 monitoring (offline fallback w/o WANDB_API_KEY)
+  decode_eval_constrained: false # training-parity free decode; reports both
+
+probe: # (scripts/probe_localization.py)
+  split: subject_val
+  n_examples: 4096
+  batch_size: 32
+  test_frac: 0.2
+  threshold_r2: 0.8                             # provisional gate
+
+validate: # (scripts/validate_subject.py)
+  split: subject_val
+  n_examples: null                              # all 5k
+  batch_size: 64
+  n_reliability_apps: 192
+  n_reliability_names: 96                       # stratified 12 per race x gender cell
+  thresholds:                                   # provisional
+    formula_r2: 0.6
+    name_pvalue: 1.0e-3
+    reliability_corr: 0.7
+
+minimal_run: false

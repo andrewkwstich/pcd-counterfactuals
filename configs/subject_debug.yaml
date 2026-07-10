@@ -1,0 +1,79 @@
+# subject fine-tune (DEBUG / single-GPU minimal-run variant)
+#
+# Same code path as configs/subject_full.yaml; differs ONLY in scale/resources
+# (tiny subset, few steps, no checkpoints). Hyperparameters here exist to
+# validate the pipeline, not to produce a usable model.
+
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct
+
+data:
+  path: data/applications/subject_set.parquet
+  text_col: application_text
+  label_col: amount
+  train_split: subject_train
+  val_split: subject_val
+  max_train_examples: 100                        # minimal-run subset
+  max_val_examples: 50
+
+anchor:
+  text: "AMOUNT APPROVED: $"
+  token_id: 400
+
+read_layer: 15
+
+run:
+  name: subject-lora-debug
+  output_root: artifacts/subject
+
+train:
+  loss: next_token_ce_on_answer
+  output_format: freeform_digits
+  decode: greedy
+  finetune_method: lora
+  lora:
+    r: 32
+    alpha: 64
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  learning_rate: 2.0e-4                           # placeholder for path validation only
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  per_device_batch_size: 8
+  eval_batch_size: 8
+  gradient_accumulation_steps: 1
+  num_epochs: 1
+  max_steps: 10                                   # ~10 steps to validate the path
+  max_seq_len: 256
+  bf16: true
+  gradient_checkpointing: false
+  seed: 17
+  logging_steps: 1
+  eval_steps: 5
+  decode_eval_examples: 16
+  decode_eval_batch_size: 8
+  max_new_tokens: 8
+  save_strategy: "no"
+  report_to: none
+
+probe:
+  split: subject_val
+  n_examples: 64
+  batch_size: 8
+  test_frac: 0.2
+  threshold_r2: 0.8
+
+validate:
+  split: subject_val
+  n_examples: 64
+  batch_size: 16
+  n_reliability_apps: 8
+  n_reliability_names: 8
+  thresholds:
+    formula_r2: 0.6
+    name_pvalue: 1.0e-3
+    reliability_corr: 0.7
+
+minimal_run: true

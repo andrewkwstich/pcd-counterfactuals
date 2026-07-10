@@ -1,0 +1,136 @@
+{
+  "n_eval": 5000,
+  "decode": {
+    "free": {
+      "n": 5000,
+      "parse_rate": 1.0,
+      "trailing_junk_rate": 0.0,
+      "mae": 44798.1612,
+      "medae": 25100.0,
+      "r2": 0.956974821752103
+    },
+    "constrained": {
+      "n": 5000,
+      "parse_rate": 1.0,
+      "trailing_junk_rate": 0.0,
+      "mae": 44798.1612,
+      "medae": 25100.0,
+      "r2": 0.956974821752103
+    }
+  },
+  "vs_noiseless_formula_mean": {
+    "mae": 20898.5396,
+    "r2": 0.9893380169697625
+  },
+  "formula_recovery": {
+    "n_uncapped_used": 3888,
+    "eta_regression": {
+      "coef_intercept": -0.05417130015684578,
+      "coef_block_q": 1.0637895683574379,
+      "coef_block_c": 1.108291320717402,
+      "coef_block_name": 1.0428697839579226,
+      "r2": 0.9357760395085601,
+      "expected": "coefs ~= 1, intercept ~= eta_center (0.1244)"
+    },
+    "name_block_partial_F": {
+      "F": 9776.393903459917,
+      "pvalue": 0.0
+    },
+    "pc_regression_on_name_residual": {
+      "coefs": [
+        0.0016282681162270718,
+        0.10223895208961284,
+        -0.019808574205888864,
+        -0.010515432373391819,
+        -0.005190945849823079,
+        0.040287325167302206
+      ],
+      "r2": 0.6839930009398265,
+      "F": 1400.0622584005837,
+      "pvalue": 0.0
+    },
+    "corr_residual_vs_block_name": 0.8267215959641683
+  },
+  "per_cell": {
+    "white_male": {
+      "n": 626,
+      "mae": 39365.71086261981,
+      "mean_signed_err": 11472.544728434505,
+      "r2": 0.9714180538878726
+    },
+    "white_female": {
+      "n": 625,
+      "mae": 45426.9232,
+      "mean_signed_err": 15159.7872,
+      "r2": 0.9554650908963802
+    },
+    "asian_male": {
+      "n": 639,
+      "mae": 42498.41001564945,
+      "mean_signed_err": 17165.9186228482,
+      "r2": 0.9653908295460695
+    },
+    "asian_female": {
+      "n": 646,
+      "mae": 47407.455108359136,
+      "mean_signed_err": 20671.229102167184,
+      "r2": 0.9346988992482874
+    },
+    "hispanic_male": {
+      "n": 602,
+      "mae": 43092.54817275747,
+      "mean_signed_err": 15070.993355481727,
+      "r2": 0.9543840067139033
+    },
+    "hispanic_female": {
+      "n": 595,
+      "mae": 51094.05042016807,
+      "mean_signed_err": 17082.282352941176,
+      "r2": 0.9487409358672791
+    },
+    "black_male": {
+      "n": 612,
+      "mae": 41733.836601307186,
+      "mean_signed_err": 12364.54248366013,
+      "r2": 0.9703492510001941
+    },
+    "black_female": {
+      "n": 655,
+      "mae": 47771.85038167939,
+      "mean_signed_err": 18710.476335877862,
+      "r2": 0.9444588379719074
+    }
+  },
+  "name_delta_reliability": {
+    "n_apps": 192,
+    "n_names": 96,
+    "split_half_pearson": 0.9977360381512651,
+    "split_half_spearman": 0.9985892566467717,
+    "mean_abs_per_name_delta": 38049.40603298612,
+    "per_cell_mean_delta": {
+      "white_male": 49765.30121527778,
+      "white_female": 22273.915798611113,
+      "asian_male": -2740.161024305556,
+      "asian_female": -5433.924913194443,
+      "hispanic_male": 28382.52777777778,
+      "hispanic_female": -9170.286458333334,
+      "black_male": 7715.348958333333,
+      "black_female": -2557.9765625000005
+    },
+    "nan_rate": 0.0
+  },
+  "thresholds_provisional": {
+    "formula_r2": 0.6,
+    "name_pvalue": 0.001,
+    "reliability_corr": 0.7
+  },
+  "gates": {
+    "free_decode_clean": true,
+    "formula_fit": true,
+    "name_signal": true,
+    "name_reliability": true
+  },
+  "b3_pass": true,
+  "adapter": "artifacts/subject/subject-lora-v1/adapter",
+  "minimal_run": false
+}

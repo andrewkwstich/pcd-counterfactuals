@@ -1,0 +1,10 @@
+{
+  "tag": "ckpt_9M",
+  "tokens": 9000960,
+  "step": 4395,
+  "n_concepts": 32768,
+  "k": 16,
+  "n_alive": 17619,
+  "n_dead": 15149,
+  "frac_alive": 0.537689208984375
+}

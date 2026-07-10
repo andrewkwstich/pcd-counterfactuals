@@ -1,0 +1,22 @@
+{
+  "run_name": "pcd-finetune-18M",
+  "steps": 4000,
+  "elapsed_seconds": 2578.5,
+  "final_qa_loss_ema": 1.2717166539811702,
+  "final_lm_loss_ema": 2.7015615600116436,
+  "val_qa_loss": 1.3078,
+  "val_answer_tok_acc": 0.7288,
+  "val_exact_match": 0.2725,
+  "val_n": 2048,
+  "qa_epochs": 0,
+  "num_processes": 4,
+  "effective_batch": 128,
+  "concept_readout": {
+    "path": "artifacts/pcd/pcd-finetune-18M/concept_readout.parquet",
+    "n_rows": 20000,
+    "unique_concepts": 158,
+    "labeled_slot_frac": 0.0
+  },
+  "peak_gpu_gib": 34.72,
+  "minimal_run": false
+}

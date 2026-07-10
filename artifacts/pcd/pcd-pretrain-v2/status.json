@@ -1,0 +1,20 @@
+{
+  "state": "completed",
+  "step": 17579,
+  "total_steps": 17579,
+  "tokens": 36001792,
+  "max_tokens": 36000000,
+  "pct_complete": 100.0,
+  "tokens_per_sec": 3206.5,
+  "eta_seconds": null,
+  "elapsed_seconds": 11233,
+  "pid": 22211,
+  "updated_at": "2026-07-08T06:26:55+0000",
+  "loss": 3.0508294105529785,
+  "lm_loss": 3.050841808319092,
+  "lm_loss_ema": 2.5979,
+  "aux_loss": -1.229168447025586e-05,
+  "lr": 2.8824262646165445e-10,
+  "frac_alive": 0.908355712890625,
+  "n_dead": 3003
+}

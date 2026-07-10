@@ -1,0 +1,54 @@
+# Generated artifacts: commit only the small JSON reports; weights, memmaps,
+# metrics logs, and plots stay out (also caught by the binary globs below).
+artifacts/**
+!artifacts/**/
+!artifacts/**/*.json
+data/raw/
+*.npy
+*.npz
+*.memmap
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+
+# Datasets binaries (manifests are committed; large binaries are not)
+data/applications/*.parquet
+data/counterfactual_qa/**/*.parquet
+data/abstract/*.parquet
+data/pretrain_cache/*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/.venv/
+
+# Notebooks / editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Reference paper (kept locally, not redistributed)
+PCD.pdf
+
+# Logs / experiment tracking
+wandb/
+*.log
+
+# Local agent instructions — never commit (see the file itself).
+CLAUDE.md
+
+# Secrets, local-only, and scratch (never commit)
+.openai_env
+/private/
+*.bundle
+Screenshot*.png

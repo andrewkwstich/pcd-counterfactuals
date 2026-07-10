@@ -1,0 +1,43 @@
+# counterfactual QA build (FULL / single-H100).
+#
+# Labels = Δ (amount_cf - subject_amount) from RERUNNING the frozen subject on
+# each cf application. Point CFs on all qa_pool apps; name-
+# categorical targets are Monte-Carlo over M subject-known names. z_cf stored
+# for point-type eval instances only (Δz used only in G).
+#
+# Sense-2 holdouts (in-dist for subject, OOD for PCD): race=asian, phrasing=
+# black_female, attribute=own_home, plus names_pcd_heldout (from name_splits).
+
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct
+
+data:
+  path: data/applications/subject_set.parquet
+  split: qa_pool
+  manifest: artifacts/activations/qa_pool/collect_manifest.parquet   # subject_amount, row index
+  max_apps: null                                                 # null = all 20K
+
+anchor:
+  text: "AMOUNT APPROVED: $"
+  token_id: 400
+read_layer: 15
+
+run:
+  name: qa_pool
+
+build:
+  adapter: artifacts/subject/subject-lora-v1/adapter
+  art_root: artifacts/counterfactuals
+  data_root: data/counterfactual_qa
+  seed: 41
+  sense1_app_frac: 0.10          # app-level in-distribution test reservation
+  n_name_point: 4                # name-point targets per app (tune after minimal-run throughput)
+  n_name_categorical: 2          # demographic descriptions per app (Monte-Carlo)
+  mc_m: 16                        # names per Monte-Carlo demographic target
+  chunk_apps: 200
+  amount_batch_size: 64
+  amount_max_new_tokens: 8
+  z_batch_size: 64
+
+minimal_run: false

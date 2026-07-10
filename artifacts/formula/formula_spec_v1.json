@@ -1,0 +1,155 @@
+{
+  "version": "v1",
+  "discrimination_direction": "penalize_black_female",
+  "interactions_enabled": false,
+  "quant_weights": {
+    "log_income": 0.5,
+    "ext_mean": 1.0,
+    "pti": -0.6,
+    "dti": -0.5,
+    "ltv": -0.25,
+    "years_employed": 0.3,
+    "age_years": 0.15,
+    "household_size": -0.15,
+    "n_open_loans": -0.2,
+    "prev_approval_rate": 0.4,
+    "avg_payment_delay_days": -0.4,
+    "avg_cc_utilization": -0.35
+  },
+  "education_offsets": {
+    "Lower secondary": -0.6,
+    "Secondary / secondary special": 0.0,
+    "Incomplete higher": 0.2,
+    "Higher education": 0.5,
+    "Academic degree": 0.7
+  },
+  "employment_offsets": {
+    "Working": 0.0,
+    "Commercial associate": 0.1,
+    "State servant": 0.2,
+    "Pensioner": -0.3,
+    "Student": -0.2,
+    "Businessman": 0.4,
+    "Maternity leave": -0.4,
+    "Unemployed": -0.8
+  },
+  "own_home_offset": 0.3,
+  "cell_targets": {
+    "white_male": 0.9,
+    "white_female": 0.1,
+    "asian_male": 0.3,
+    "asian_female": -0.5,
+    "hispanic_male": 0.15,
+    "hispanic_female": -0.65,
+    "black_male": -0.1,
+    "black_female": -0.9
+  },
+  "pc_weights": {
+    "pc1": 0.010961026749282345,
+    "pc2": 1.8715711844010388,
+    "pc3": -0.3392587457263072,
+    "pc4": -0.1532468177866588,
+    "pc5": -0.0679918533333376,
+    "pc6": 0.4816043493554282
+  },
+  "var_shares_target": {
+    "quant_cat": 0.65,
+    "name": 0.2,
+    "noise": 0.15
+  },
+  "sigmoid": {
+    "a": 1.4,
+    "b": 0.955,
+    "f_min": 0.15,
+    "f_max": 1.05
+  },
+  "round_to": 100,
+  "zstats": {
+    "quant": {
+      "log_income": {
+        "mean": 11.932423557709212,
+        "std": 0.49251957311513717
+      },
+      "ext_mean": {
+        "mean": 0.5023574787432978,
+        "std": 0.11053210167358174
+      },
+      "pti": {
+        "mean": 2.1344748960553472,
+        "std": 1.12618011498911
+      },
+      "dti": {
+        "mean": 2.9961681929545474,
+        "std": 6.199722865913222
+      },
+      "ltv": {
+        "mean": 1.1218159720377023,
+        "std": 0.12308182828924134
+      },
+      "years_employed": {
+        "mean": 6.050257631759069,
+        "std": 5.902909323945461
+      },
+      "age_years": {
+        "mean": 40.74287973716631,
+        "std": 11.980905553062598
+      },
+      "household_size": {
+        "mean": 2.14396,
+        "std": 0.9441496966843754
+      },
+      "n_open_loans": {
+        "mean": 1.77952,
+        "std": 1.7856959649617385
+      },
+      "prev_approval_rate": {
+        "mean": 0.8748590760947115,
+        "std": 0.21048422368587696
+      },
+      "avg_payment_delay_days": {
+        "mean": -11.227017671782304,
+        "std": 8.847999560328047
+      },
+      "avg_cc_utilization": {
+        "mean": 0.0900997296616222,
+        "std": 0.22581511374349117
+      }
+    },
+    "pc": {
+      "pc1": {
+        "mean": 0.008671502582728863,
+        "std": 4.336590766906738
+      },
+      "pc2": {
+        "mean": 0.006841569673269987,
+        "std": 4.1888861656188965
+      },
+      "pc3": {
+        "mean": -0.014137188903987408,
+        "std": 3.65214204788208
+      },
+      "pc4": {
+        "mean": 0.0024610625114291906,
+        "std": 3.26759672164917
+      },
+      "pc5": {
+        "mean": -0.0017364048399031162,
+        "std": 2.822204351425171
+      },
+      "pc6": {
+        "mean": -0.006074150558561087,
+        "std": 2.580303907394409
+      }
+    }
+  },
+  "scales": {
+    "s_qc": 0.41481714834272554,
+    "s_n": 0.22726094722747803,
+    "sigma_eps": 0.3872983346207417,
+    "eta_center": 0.12437511931787221
+  },
+  "placebo_fields": [
+    "occupation",
+    "housing_type"
+  ]
+}

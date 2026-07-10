@@ -1,0 +1,24 @@
+{
+  "real": {
+    "sign_acc": 0.5365,
+    "sign_acc_committed": 0.9238,
+    "pred_zero_rate": 0.4193,
+    "mae": 37686.2,
+    "n": 384
+  },
+  "scramble": {
+    "sign_acc": 0.3984,
+    "sign_acc_committed": 0.7116,
+    "pred_zero_rate": 0.4401,
+    "mae": 43123.7,
+    "n": 384
+  },
+  "by_class_sign_acc_real": {
+    "categorical": 0.5938,
+    "name_categorical": 0.75,
+    "name_point": 0.3958,
+    "quant": 0.4062
+  },
+  "val_qa_loss": 1.3045,
+  "val_exact_match": 0.2705
+}

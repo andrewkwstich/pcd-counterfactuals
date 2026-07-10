@@ -1,0 +1,36 @@
+# frozen-artifact collection (FULL / single-H100).
+#
+# Inference-only on the frozen subject (base + LoRA, merged). Collects
+# z_original @ layer 15 / anchor 400, the subject's greedy amount, and post-hoc
+# reasoning, for the chosen split. Default pool = qa_pool (20K, unseen by the
+# subject) — the PCD's application universe.
+
+model:
+  base: meta-llama/Llama-3.1-8B-Instruct
+  tokenizer_mirror: unsloth/Meta-Llama-3.1-8B-Instruct   # ungated fallback (HF_TOKEN unset)
+
+data:
+  path: data/applications/subject_set.parquet
+  split: qa_pool                                         # subject_train/subject_val also valid
+  max_examples: null
+
+anchor:
+  text: "AMOUNT APPROVED: $"
+  token_id: 400 # SETTLED ()
+
+read_layer: 15 # SETTLED (l_read; R^2.95 single-pos)
+
+run:
+  name: qa_pool
+
+collect:
+  adapter: artifacts/subject/subject-lora-v1/adapter # frozen subject (winner)
+  output_root: artifacts/activations
+  chunk_size: 2000                                       # stream to memmap, bound memory
+  z_batch_size: 64
+  amount_batch_size: 64
+  amount_max_new_tokens: 8
+  reasoning_batch_size: 32
+  reasoning_max_new_tokens: 768                          # >50% headroom over probe p99=498 (512 clipped ~1-2% tail)
+
+minimal_run: false

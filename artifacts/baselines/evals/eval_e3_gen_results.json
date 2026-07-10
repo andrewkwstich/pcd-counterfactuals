@@ -1,0 +1,23 @@
+{
+  "results": {
+    "real": {
+      "parse_rate": 1.0,
+      "pred_zero_rate": 0.393,
+      "sign_acc_incl_zero_preds": 0.557,
+      "sign_acc_nonzero_preds": 0.918,
+      "mae": 36979.6,
+      "predict_zero_baseline_mae": 45031.3,
+      "n": 384
+    },
+    "scramble": {
+      "parse_rate": 1.0,
+      "pred_zero_rate": 0.456,
+      "sign_acc_incl_zero_preds": 0.409,
+      "sign_acc_nonzero_preds": 0.751,
+      "mae": 43037.8,
+      "predict_zero_baseline_mae": 45031.3,
+      "n": 384
+    }
+  },
+  "note": "sense1_test nonzero-delta only; greedy decode; scramble = random other applicant z"
+}

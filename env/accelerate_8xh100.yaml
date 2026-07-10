@@ -1,0 +1,26 @@
+# accelerate config for the Stage E1 PCD pretraining full run (8xH100, single node).
+# DDP is sufficient (only the encoder + decoder LoRA are trainable); no DeepSpeed.
+# mixed_precision is 'no' on purpose: the decoder runs in native bf16 and the
+# encoder keeps fp32 params for the wide matmul / top-k (see src/pcd/encoder.py).
+#
+#   accelerate launch --config_file env/accelerate_8xh100.yaml \
+#       scripts/pretrain_pcd.py --config configs/pcd_pretrain_full.yaml
+#
+# For a pre-flight multi-GPU check (on a node with >=2 GPUs; NOT a single H100,
+# where 2 processes would just share/contend one GPU), run the debug config first:
+#   accelerate launch --num_processes 2 scripts/pretrain_pcd.py \
+#       --config configs/pcd_pretrain_debug.yaml --minimal-run
+compute_environment: LOCAL_MACHINE
+distributed_type: MULTI_GPU
+downcast_bf16: 'no'
+gpu_ids: all
+machine_rank: 0
+main_training_function: main
+mixed_precision: 'no'
+num_machines: 1
+num_processes: 8
+rdzv_backend: static
+same_network: true
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
